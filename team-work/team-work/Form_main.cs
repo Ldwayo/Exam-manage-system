@@ -21,5 +21,15 @@ namespace team_work
         {
 
         }
+
+        private void Form_main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 添加图书信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

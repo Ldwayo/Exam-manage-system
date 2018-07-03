@@ -30,18 +30,18 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.系统设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.信息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.图书管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.使用帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.我的信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.密码修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出系统ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.信息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.用户信息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.管理员信息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.图书管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.添加图书信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.图书信息查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.使用帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +55,8 @@
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1099, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(824, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -66,8 +67,26 @@
             this.密码修改ToolStripMenuItem,
             this.退出系统ToolStripMenuItem});
             this.系统设置ToolStripMenuItem.Name = "系统设置ToolStripMenuItem";
-            this.系统设置ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.系统设置ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.系统设置ToolStripMenuItem.Text = "系统设置";
+            // 
+            // 我的信息ToolStripMenuItem
+            // 
+            this.我的信息ToolStripMenuItem.Name = "我的信息ToolStripMenuItem";
+            this.我的信息ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.我的信息ToolStripMenuItem.Text = "我的信息";
+            // 
+            // 密码修改ToolStripMenuItem
+            // 
+            this.密码修改ToolStripMenuItem.Name = "密码修改ToolStripMenuItem";
+            this.密码修改ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.密码修改ToolStripMenuItem.Text = "密码修改";
+            // 
+            // 退出系统ToolStripMenuItem
+            // 
+            this.退出系统ToolStripMenuItem.Name = "退出系统ToolStripMenuItem";
+            this.退出系统ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.退出系统ToolStripMenuItem.Text = "退出系统";
             // 
             // 信息管理ToolStripMenuItem
             // 
@@ -75,9 +94,21 @@
             this.用户信息管理ToolStripMenuItem,
             this.管理员信息管理ToolStripMenuItem});
             this.信息管理ToolStripMenuItem.Name = "信息管理ToolStripMenuItem";
-            this.信息管理ToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
+            this.信息管理ToolStripMenuItem.Size = new System.Drawing.Size(92, 21);
             this.信息管理ToolStripMenuItem.Text = "人员信息管理";
             this.信息管理ToolStripMenuItem.Click += new System.EventHandler(this.信息管理ToolStripMenuItem_Click);
+            // 
+            // 用户信息管理ToolStripMenuItem
+            // 
+            this.用户信息管理ToolStripMenuItem.Name = "用户信息管理ToolStripMenuItem";
+            this.用户信息管理ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.用户信息管理ToolStripMenuItem.Text = "用户信息管理";
+            // 
+            // 管理员信息管理ToolStripMenuItem
+            // 
+            this.管理员信息管理ToolStripMenuItem.Name = "管理员信息管理ToolStripMenuItem";
+            this.管理员信息管理ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.管理员信息管理ToolStripMenuItem.Text = "管理员信息管理";
             // 
             // 图书管理ToolStripMenuItem
             // 
@@ -85,8 +116,21 @@
             this.添加图书信息ToolStripMenuItem,
             this.图书信息查询ToolStripMenuItem});
             this.图书管理ToolStripMenuItem.Name = "图书管理ToolStripMenuItem";
-            this.图书管理ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.图书管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.图书管理ToolStripMenuItem.Text = "图书管理";
+            // 
+            // 添加图书信息ToolStripMenuItem
+            // 
+            this.添加图书信息ToolStripMenuItem.Name = "添加图书信息ToolStripMenuItem";
+            this.添加图书信息ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.添加图书信息ToolStripMenuItem.Text = "添加图书信息";
+            this.添加图书信息ToolStripMenuItem.Click += new System.EventHandler(this.添加图书信息ToolStripMenuItem_Click);
+            // 
+            // 图书信息查询ToolStripMenuItem
+            // 
+            this.图书信息查询ToolStripMenuItem.Name = "图书信息查询ToolStripMenuItem";
+            this.图书信息查询ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.图书信息查询ToolStripMenuItem.Text = "图书信息查询";
             // 
             // 帮助ToolStripMenuItem
             // 
@@ -94,72 +138,32 @@
             this.使用帮助ToolStripMenuItem,
             this.关于ToolStripMenuItem});
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.帮助ToolStripMenuItem.Text = "帮助";
             // 
             // 使用帮助ToolStripMenuItem
             // 
             this.使用帮助ToolStripMenuItem.Name = "使用帮助ToolStripMenuItem";
-            this.使用帮助ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.使用帮助ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.使用帮助ToolStripMenuItem.Text = "使用帮助";
             // 
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.关于ToolStripMenuItem.Text = "关于";
-            // 
-            // 我的信息ToolStripMenuItem
-            // 
-            this.我的信息ToolStripMenuItem.Name = "我的信息ToolStripMenuItem";
-            this.我的信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.我的信息ToolStripMenuItem.Text = "我的信息";
-            // 
-            // 密码修改ToolStripMenuItem
-            // 
-            this.密码修改ToolStripMenuItem.Name = "密码修改ToolStripMenuItem";
-            this.密码修改ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.密码修改ToolStripMenuItem.Text = "密码修改";
-            // 
-            // 退出系统ToolStripMenuItem
-            // 
-            this.退出系统ToolStripMenuItem.Name = "退出系统ToolStripMenuItem";
-            this.退出系统ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.退出系统ToolStripMenuItem.Text = "退出系统";
-            // 
-            // 用户信息管理ToolStripMenuItem
-            // 
-            this.用户信息管理ToolStripMenuItem.Name = "用户信息管理ToolStripMenuItem";
-            this.用户信息管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.用户信息管理ToolStripMenuItem.Text = "用户信息管理";
-            // 
-            // 管理员信息管理ToolStripMenuItem
-            // 
-            this.管理员信息管理ToolStripMenuItem.Name = "管理员信息管理ToolStripMenuItem";
-            this.管理员信息管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.管理员信息管理ToolStripMenuItem.Text = "管理员信息管理";
-            // 
-            // 添加图书信息ToolStripMenuItem
-            // 
-            this.添加图书信息ToolStripMenuItem.Name = "添加图书信息ToolStripMenuItem";
-            this.添加图书信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.添加图书信息ToolStripMenuItem.Text = "添加图书信息";
-            // 
-            // 图书信息查询ToolStripMenuItem
-            // 
-            this.图书信息查询ToolStripMenuItem.Name = "图书信息查询ToolStripMenuItem";
-            this.图书信息查询ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.图书信息查询ToolStripMenuItem.Text = "图书信息查询";
             // 
             // Form_main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1099, 513);
+            this.ClientSize = new System.Drawing.Size(824, 410);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_main";
             this.Text = "Form_main";
+            this.Load += new System.EventHandler(this.Form_main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
