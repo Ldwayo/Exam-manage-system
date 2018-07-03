@@ -53,93 +53,84 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(165, 76);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(124, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
+            this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "用户名：";
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(255, 72);
-            this.name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.name.Location = new System.Drawing.Point(191, 58);
             this.name.MaxLength = 15;
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(157, 25);
+            this.name.Size = new System.Drawing.Size(119, 21);
             this.name.TabIndex = 1;
             this.name.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(165, 115);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(124, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 15);
+            this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 2;
             this.label2.Text = "性别：";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(165, 151);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(124, 121);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 15);
+            this.label3.Size = new System.Drawing.Size(65, 12);
             this.label3.TabIndex = 3;
             this.label3.Text = "出生日期：";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(165, 269);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(124, 215);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 15);
+            this.label4.Size = new System.Drawing.Size(41, 12);
             this.label4.TabIndex = 4;
             this.label4.Text = "密码：";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(165, 308);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(124, 246);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 15);
+            this.label5.Size = new System.Drawing.Size(65, 12);
             this.label5.TabIndex = 5;
             this.label5.Text = "确认密码：";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(255, 265);
-            this.password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.password.Location = new System.Drawing.Point(191, 212);
             this.password.MaxLength = 15;
             this.password.Name = "password";
             this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(157, 25);
+            this.password.Size = new System.Drawing.Size(119, 21);
             this.password.TabIndex = 6;
             this.password.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // makesure_password
             // 
-            this.makesure_password.Location = new System.Drawing.Point(255, 308);
-            this.makesure_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.makesure_password.Location = new System.Drawing.Point(191, 246);
             this.makesure_password.MaxLength = 15;
             this.makesure_password.Name = "makesure_password";
             this.makesure_password.PasswordChar = '*';
-            this.makesure_password.Size = new System.Drawing.Size(157, 25);
+            this.makesure_password.Size = new System.Drawing.Size(119, 21);
             this.makesure_password.TabIndex = 7;
             this.makesure_password.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // sex_man
             // 
             this.sex_man.AutoSize = true;
-            this.sex_man.Location = new System.Drawing.Point(255, 112);
-            this.sex_man.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sex_man.Location = new System.Drawing.Point(191, 90);
             this.sex_man.Name = "sex_man";
-            this.sex_man.Size = new System.Drawing.Size(43, 19);
+            this.sex_man.Size = new System.Drawing.Size(35, 16);
             this.sex_man.TabIndex = 8;
             this.sex_man.TabStop = true;
             this.sex_man.Text = "男";
@@ -149,10 +140,9 @@
             // sex_woman
             // 
             this.sex_woman.AutoSize = true;
-            this.sex_woman.Location = new System.Drawing.Point(344, 112);
-            this.sex_woman.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sex_woman.Location = new System.Drawing.Point(258, 90);
             this.sex_woman.Name = "sex_woman";
-            this.sex_woman.Size = new System.Drawing.Size(43, 19);
+            this.sex_woman.Size = new System.Drawing.Size(35, 16);
             this.sex_woman.TabIndex = 9;
             this.sex_woman.TabStop = true;
             this.sex_woman.Text = "女";
@@ -161,29 +151,26 @@
             // 
             // birth
             // 
-            this.birth.Location = new System.Drawing.Point(255, 144);
-            this.birth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.birth.Location = new System.Drawing.Point(191, 115);
             this.birth.Name = "birth";
-            this.birth.Size = new System.Drawing.Size(157, 25);
+            this.birth.Size = new System.Drawing.Size(119, 21);
             this.birth.TabIndex = 10;
             this.birth.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(152, 358);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(114, 286);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 29);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 11;
             this.button1.Text = "注册";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(295, 358);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(221, 286);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 29);
+            this.button2.Size = new System.Drawing.Size(72, 23);
             this.button2.TabIndex = 12;
             this.button2.Text = "重置";
             this.button2.UseVisualStyleBackColor = true;
@@ -192,68 +179,61 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(165, 32);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(124, 26);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 15);
+            this.label6.Size = new System.Drawing.Size(41, 12);
             this.label6.TabIndex = 13;
             this.label6.Text = "账号：";
             // 
             // reader_id
             // 
-            this.reader_id.Location = new System.Drawing.Point(255, 29);
-            this.reader_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.reader_id.Location = new System.Drawing.Point(191, 23);
             this.reader_id.MaxLength = 15;
             this.reader_id.Name = "reader_id";
-            this.reader_id.Size = new System.Drawing.Size(157, 25);
+            this.reader_id.Size = new System.Drawing.Size(119, 21);
             this.reader_id.TabIndex = 14;
             this.reader_id.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(165, 189);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(124, 151);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 15);
+            this.label7.Size = new System.Drawing.Size(41, 12);
             this.label7.TabIndex = 15;
             this.label7.Text = "住址：";
             // 
             // address
             // 
-            this.address.Location = new System.Drawing.Point(255, 185);
-            this.address.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.address.Location = new System.Drawing.Point(191, 148);
             this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(157, 25);
+            this.address.Size = new System.Drawing.Size(119, 21);
             this.address.TabIndex = 16;
             this.address.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(165, 222);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(124, 178);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 15);
+            this.label8.Size = new System.Drawing.Size(53, 12);
             this.label8.TabIndex = 17;
             this.label8.Text = "手机号：";
             // 
             // tel
             // 
-            this.tel.Location = new System.Drawing.Point(255, 222);
-            this.tel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tel.Location = new System.Drawing.Point(191, 178);
             this.tel.MaxLength = 11;
             this.tel.Name = "tel";
-            this.tel.Size = new System.Drawing.Size(155, 25);
+            this.tel.Size = new System.Drawing.Size(117, 21);
             this.tel.TabIndex = 18;
             this.tel.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(432, 358);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Location = new System.Drawing.Point(324, 286);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 29);
+            this.button3.Size = new System.Drawing.Size(71, 23);
             this.button3.TabIndex = 19;
             this.button3.Text = "返回";
             this.button3.UseVisualStyleBackColor = true;
@@ -261,9 +241,8 @@
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 445);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.ClientSize = new System.Drawing.Size(500, 356);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.tel);
             this.Controls.Add(this.label8);
@@ -284,9 +263,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.name);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Register";
             this.Text = "用户注册";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Register_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
