@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace team_work
 {
-    public partial class Form1 : Form
+    public partial class Form_bookresearch : Form
     {
-        public Form1()
+        public Form_bookresearch()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -51,17 +51,17 @@
     <Compile Include="Changepassword.Designer.cs">
       <DependentUpon>Changepassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_Addbook.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_Addbook.Designer.cs">
       <DependentUpon>Form_Addbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_bookresearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_bookresearch.Designer.cs">
+      <DependentUpon>Form_bookresearch.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_LoginTest.cs">
       <SubType>Form</SubType>
@@ -86,11 +86,11 @@
     <EmbeddedResource Include="Changepassword.resx">
       <DependentUpon>Changepassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_Addbook.resx">
       <DependentUpon>Form_Addbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_bookresearch.resx">
+      <DependentUpon>Form_bookresearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_LoginTest.resx">
       <DependentUpon>Form_LoginTest.cs</DependentUpon>
