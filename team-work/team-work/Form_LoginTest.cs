@@ -24,7 +24,9 @@ namespace team_work
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form_main  form= new Form_main();
+            form.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)

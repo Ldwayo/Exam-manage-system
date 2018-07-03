@@ -15,6 +15,7 @@ namespace team_work
         public Form_main()
         {
             InitializeComponent();
+            this.IsMdiContainer = true;
         }
 
         private void 信息管理ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -29,6 +30,9 @@ namespace team_work
 
         private void 添加图书信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form form = new Form_Addbook();
+            form.MdiParent = this;
+            form.Show();
 
         }
     }
