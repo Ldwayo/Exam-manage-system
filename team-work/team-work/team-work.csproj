@@ -51,6 +51,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Changepassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changepassword.Designer.cs">
+      <DependentUpon>Changepassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_LoginTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +73,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Changepassword.resx">
+      <DependentUpon>Changepassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_LoginTest.resx">
       <DependentUpon>Form_LoginTest.cs</DependentUpon>
