@@ -35,5 +35,24 @@ namespace team_work
             form.Show();
 
         }
+
+        private void 图书信息查询ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new Form_bookresearch();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void 密码修改ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new Changepassword();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void 退出系统ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
