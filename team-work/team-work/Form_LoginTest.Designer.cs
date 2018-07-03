@@ -1,6 +1,6 @@
 ﻿namespace team_work
 {
-    partial class Login
+    partial class Form_Login
     {
         /// <summary>
         /// Required designer variable.
