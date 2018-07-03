@@ -65,11 +65,11 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(598, 143);
+            this.button3.Location = new System.Drawing.Point(568, 103);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(61, 47);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "66666";
+            this.button3.TabIndex = 0;
+            this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // Form1
