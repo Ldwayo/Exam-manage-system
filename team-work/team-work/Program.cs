@@ -19,7 +19,6 @@ namespace team_work
             Form form = new Form_LoginTest();
             form.Show();
             Application.Run();
-
         }
     }
 }
