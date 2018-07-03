@@ -16,7 +16,7 @@ namespace team_work
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form form = new Form1();
+            Form form = new Form_LoginTest();
             form.Show();
             Application.Run();
 
