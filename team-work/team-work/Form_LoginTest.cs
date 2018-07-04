@@ -117,7 +117,7 @@ namespace team_work
             {
                 Register form = new Register();
                 form.Show();
-                this.Hide();
+                //this.Hide();
             }
             else
             {

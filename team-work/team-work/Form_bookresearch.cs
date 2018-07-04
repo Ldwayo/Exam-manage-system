@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
 
 namespace team_work
 {
@@ -15,6 +16,14 @@ namespace team_work
         public Form_bookresearch()
         {
             InitializeComponent();
+            init_gridview();
+        }
+
+        private void init_gridview()
+        {
+            string strsql = "select * from book_info";
+            DataTable dataTable = DBhelp.GetDataTable(strsql);
+            bookgridview.DataSource = dataTable;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -33,6 +42,11 @@ namespace team_work
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_bookresearch_Load(object sender, EventArgs e)
         {
 
         }
