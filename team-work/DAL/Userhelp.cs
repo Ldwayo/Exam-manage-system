@@ -12,7 +12,7 @@ namespace DAL
     {
         
         //search id exists
-        public SqlDataReader ExistsID(string Uid)
+        public static SqlDataReader ExistsID(string Uid)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append("select count(1) from reader_info");
@@ -22,7 +22,7 @@ namespace DAL
         }
 
         //check password
-        public SqlDataReader Password(string Uid, string pwd)
+        public static SqlDataReader Password(string Uid, string pwd)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append("select * from reader_info");
@@ -32,7 +32,7 @@ namespace DAL
             return DBhelp.ExecuteReader(stringBuilder.ToString());
         }
 
-        public bool ChangePassword(string Uid, string pwd)
+        public static bool ChangePassword(string Uid, string pwd)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append("update reader_info set ");
@@ -50,7 +50,7 @@ namespace DAL
             }
         }
 
-        public DataTable SelectAdmin()
+        public static DataTable SelectAdmin()
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append("select * from reader_info");

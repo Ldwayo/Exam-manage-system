@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 using DAL;
 
 namespace team_work
@@ -25,10 +26,43 @@ namespace team_work
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string uid = admin_id.Text.ToString().Trim();
+            string pwd = password.Text.ToString().Trim();
+            if (uid.Equals("") && pwd.Equals(""))
+            {
+                MessageBox.Show("账号密码不能为空！");
+            }
+            else if (uid.Equals(""))
+            {
+                MessageBox.Show("账号不能为空！");
+            }
+            else if (pwd.Equals(""))
+            {
+                MessageBox.Show("密码不能为空！");
+            }
+            else
+            {
+                if (user_type.SelectedItem.ToString().Trim().Equals("用户"))
+                {
+                    SqlDataReader sqlDataReader;
+                    sqlDataReader = Userhelp.Password(uid, pwd);
+                    if (sqlDataReader.Read())
+                    {
+                        Form_main  form= new Form_main();
+                        form.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("密码错误！");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("管理员登陆！");
+                }
+            }
             
-            Form_main  form= new Form_main();
-            form.Show();
-            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
