@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.reader_id = new System.Windows.Forms.TextBox();
+            this.admin_id = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
             this.user_type = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -78,14 +78,14 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "用户类型：";
             // 
-            // reader_id
+            // admin_id
             // 
-            this.reader_id.Location = new System.Drawing.Point(163, 84);
-            this.reader_id.MaxLength = 15;
-            this.reader_id.Name = "reader_id";
-            this.reader_id.Size = new System.Drawing.Size(145, 21);
-            this.reader_id.TabIndex = 4;
-            this.reader_id.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.admin_id.Location = new System.Drawing.Point(163, 84);
+            this.admin_id.MaxLength = 15;
+            this.admin_id.Name = "admin_id";
+            this.admin_id.Size = new System.Drawing.Size(145, 21);
+            this.admin_id.TabIndex = 4;
+            this.admin_id.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // password
             // 
@@ -167,7 +167,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.user_type);
             this.Controls.Add(this.password);
-            this.Controls.Add(this.reader_id);
+            this.Controls.Add(this.admin_id);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -189,7 +189,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox reader_id;
+        private System.Windows.Forms.TextBox admin_id;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.ComboBox user_type;
         private System.Windows.Forms.Button button1;
