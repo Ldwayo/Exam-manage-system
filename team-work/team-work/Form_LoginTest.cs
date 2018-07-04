@@ -44,11 +44,16 @@ namespace team_work
             {
                 if (user_type.SelectedItem.ToString().Trim().Equals("用户"))
                 {
+                    MessageBox.Show("用户登陆！");
+                }
+                else
+                {
+                    Userhelp.reuid(uid);
                     SqlDataReader sqlDataReader;
                     sqlDataReader = Userhelp.Password(uid, pwd);
                     if (sqlDataReader.Read())
                     {
-                        Form_main  form= new Form_main();
+                        Form_main form = new Form_main();
                         form.Show();
                         this.Hide();
                     }
@@ -56,10 +61,7 @@ namespace team_work
                     {
                         MessageBox.Show("密码错误！");
                     }
-                }
-                else
-                {
-                    MessageBox.Show("管理员登陆！");
+                    sqlDataReader.Close();
                 }
             }
             

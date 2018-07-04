@@ -50,7 +50,7 @@
             // new_password
             // 
             this.new_password.Location = new System.Drawing.Point(279, 110);
-            this.new_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.new_password.Margin = new System.Windows.Forms.Padding(4);
             this.new_password.MaxLength = 15;
             this.new_password.Name = "new_password";
             this.new_password.PasswordChar = '*';
@@ -71,7 +71,7 @@
             // makesure_new_password
             // 
             this.makesure_new_password.Location = new System.Drawing.Point(279, 164);
-            this.makesure_new_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.makesure_new_password.Margin = new System.Windows.Forms.Padding(4);
             this.makesure_new_password.MaxLength = 15;
             this.makesure_new_password.Name = "makesure_new_password";
             this.makesure_new_password.PasswordChar = '*';
@@ -82,17 +82,18 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(176, 242);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 29);
             this.button1.TabIndex = 4;
             this.button1.Text = "确定";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(284, 242);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(105, 29);
             this.button2.TabIndex = 5;
@@ -103,7 +104,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(397, 242);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(95, 29);
             this.button3.TabIndex = 6;
@@ -123,7 +124,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.new_password);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Changepassword";
             this.Text = "密码修改";
             this.Load += new System.EventHandler(this.Form3_Load);

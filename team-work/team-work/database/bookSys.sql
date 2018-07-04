@@ -23,10 +23,12 @@ DEALLOCATE   tb
   
 EXEC ('drop   database  [' + @dbname + ']')  
 
-CREATE DataBase BooksManage
 
 USE BooksManage 
 GO
+
+CREATE DataBase BooksManage
+
 CREATE TABLE reader_info
 (
     reader_id int NOT NULL PRIMARY KEY,

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
 
 namespace team_work
 {
@@ -41,6 +42,27 @@ namespace team_work
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string p1 = new_password.Text.ToString().Trim();
+            string p2 = makesure_new_password.Text.ToString().Trim();
+            if (!p1.Equals(p2))
+            {
+                MessageBox.Show("两次密码必须相同！");
+            }
+            else
+            {
+                if(Userhelp.ChangePassword(Userhelp.ruid, p1))
+                {
+                    MessageBox.Show("更改密码成功！");
+                }
+                else
+                {
+                    MessageBox.Show("更改密码失败！");
+                }
+            }
         }
     }
 }

@@ -10,14 +10,22 @@ namespace DAL
 {
     public class Userhelp
     {
-        
+
+        public static string ruid;
+
+        public static void reuid(string Uid)
+        {
+            ruid = Uid;
+        }
+
         //search id exists
         public static SqlDataReader ExistsID(string Uid)
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append("select count(1) from reader_info");
             stringBuilder.Append(" where ");
-            stringBuilder.Append("reader_id=@Uid");
+            stringBuilder.Append("reader_id=");
+            stringBuilder.Append(Uid);
             return DBhelp.ExecuteReader(stringBuilder.ToString());
         }
 
@@ -27,8 +35,10 @@ namespace DAL
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append("select * from reader_info");
             stringBuilder.Append(" where ");
-            stringBuilder.Append("reader_id=@Uid");
-            stringBuilder.Append("and password=@pwd");
+            stringBuilder.Append("reader_id=");
+            stringBuilder.Append(Uid);
+            stringBuilder.Append(" and password=");
+            stringBuilder.Append(pwd);
             return DBhelp.ExecuteReader(stringBuilder.ToString());
         }
 
@@ -36,8 +46,10 @@ namespace DAL
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append("update reader_info set ");
-            stringBuilder.Append("password=@pwd ");
-            stringBuilder.Append("where reader_id=@Uid");
+            stringBuilder.Append("password=");
+            stringBuilder.Append(pwd);
+            stringBuilder.Append("where reader_id=");
+            stringBuilder.Append(Uid);
             int rows = DBhelp.ExecuteNonQuery(stringBuilder.ToString());
 
             if (rows > 0)
@@ -48,6 +60,7 @@ namespace DAL
             {
                 return false;
             }
+
         }
 
         public static DataTable SelectAdmin()
