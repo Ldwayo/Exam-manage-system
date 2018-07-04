@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace team_work
 {
-    public partial class Form_bookresearch : Form
+    public partial class Form_Administrator_Information_Management : Form
     {
-        public Form_bookresearch()
+        public Form_Administrator_Information_Management()
         {
             InitializeComponent();
         }
@@ -22,17 +22,7 @@ namespace team_work
             this.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

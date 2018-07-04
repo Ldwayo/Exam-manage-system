@@ -56,5 +56,34 @@ namespace team_work
         {
             Application.Exit();
         }
+
+        private void 用户信息管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new Form_User_Information_Management();
+            form.MdiParent = this;
+            form.Show();
+            form.Dock = DockStyle.Fill;
+        }
+
+        private void 管理员信息管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new Form_Administrator_Information_Management();
+            form.MdiParent = this;
+            form.Show();
+            form.Dock = DockStyle.Fill;
+        }
+
+        private void 系统设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 我的信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new Form_My_Information();
+            form.MdiParent = this;
+            form.Show();
+            form.Dock = DockStyle.Fill;
+        }
     }
 }

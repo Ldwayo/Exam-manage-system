@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace team_work
 {
-    public partial class Form_bookresearch : Form
+    public partial class Form_User_Information_Management : Form
     {
-        public Form_bookresearch()
+        public Form_User_Information_Management()
         {
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            this.Close();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -27,12 +27,12 @@ namespace team_work
 
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void password_TextChanged(object sender, EventArgs e)
         {
 
         }
