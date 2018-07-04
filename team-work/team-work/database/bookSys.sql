@@ -1,4 +1,4 @@
-CREATE database BooksManage
+CREATE DataBase BooksManage
 
 CREATE TABLE reader_info
 (

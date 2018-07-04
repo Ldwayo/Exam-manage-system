@@ -33,7 +33,7 @@ namespace team_work
             Form form = new Form_Addbook();
             form.MdiParent = this;
             form.Show();
-
+            form.Dock = DockStyle.Fill;
         }
 
         private void 图书信息查询ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -41,6 +41,7 @@ namespace team_work
             Form form = new Form_bookresearch();
             form.MdiParent = this;
             form.Show();
+            form.Dock = DockStyle.Fill;
         }
 
         private void 密码修改ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace team_work
             Form form = new Changepassword();
             form.MdiParent = this;
             form.Show();
+            form.Dock = DockStyle.Fill;
         }
 
         private void 退出系统ToolStripMenuItem_Click(object sender, EventArgs e)

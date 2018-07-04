@@ -31,5 +31,46 @@ namespace team_work
         {
 
         }
+
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void author_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void introduction_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void price_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void class_id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            book_id.Text = "";
+            name.Text = "";
+            author.Text = "";
+            publish.Text = "";
+            price.Text = "";
+            class_id.Text = "";
+            introduction.Text  = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
