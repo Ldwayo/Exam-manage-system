@@ -1,3 +1,5 @@
+CREATE database BooksManage
+
 CREATE TABLE reader_info
 (
     reader_id int NOT NULL PRIMARY KEY,
