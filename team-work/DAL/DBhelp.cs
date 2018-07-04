@@ -17,7 +17,7 @@ namespace DAL
         {
             get
             {
-                string strConn = "";
+                string strConn = @"Data Source=DESKTOP-3PF8DBI\SQLEXPRESS;Initial Catalog=Booksmanage;User ID=sa;Password=w123456";
                 if (connection == null)
                 {
                     connection = new SqlConnection(strConn);
@@ -60,6 +60,22 @@ namespace DAL
             return cmd.ExecuteNonQuery();
         }
 
+        //return DataSet
+        public static DataSet DateSet(string strSql)
+        {
+            DataSet ds = new DataSet();
+            SqlDataAdapter adapter = new SqlDataAdapter(strSql, GetConnection);
+            adapter.Fill(ds);
+            return ds;
+        }
 
+        //return DataTable
+        public static DataTable GetDataTable(string strSql)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(strSql, GetConnection);
+            dataAdapter.Fill(dt);
+            return dt;
+        }
     }
 }

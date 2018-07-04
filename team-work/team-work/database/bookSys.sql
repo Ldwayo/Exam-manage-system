@@ -1,5 +1,32 @@
+USE MASTER    
+GO    
+     
+DECLARE @dbname SYSNAME    
+SET @dbname = 'BooksManage' --这个是要删除的数据库库名    
+     
+DECLARE @s NVARCHAR(1000)    
+DECLARE tb CURSOR LOCAL   
+FOR  
+    SELECT s = 'kill   ' + CAST(spid AS VARCHAR)  
+    FROM   MASTER..sysprocesses  
+    WHERE  dbid = DB_ID(@dbname)    
+     
+OPEN   tb      
+FETCH   NEXT   FROM   tb   INTO   @s    
+WHILE @@fetch_status = 0  
+BEGIN  
+    EXEC (@s)   
+    FETCH NEXT FROM tb INTO @s  
+END    
+CLOSE   tb    
+DEALLOCATE   tb    
+  
+EXEC ('drop   database  [' + @dbname + ']')  
+
 CREATE DataBase BooksManage
 
+USE BooksManage 
+GO
 CREATE TABLE reader_info
 (
     reader_id int NOT NULL PRIMARY KEY,
@@ -140,3 +167,8 @@ VALUES
 
 ALTER TABLE reader_card
   ADD PRIMARY KEY (reader_id);
+
+Drop TABLE IF EXISTS reader_card
+
+ALTER Table reader_info
+    ADD password VARCHAR(15) Not NULL DEFAULT '11111';

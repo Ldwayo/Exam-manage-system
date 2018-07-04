@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CA17D883-A3EE-434E-9CAD-19B209200454}</ProjectGuid>
+    <ProjectGuid>{AB819702-A488-4214-9EA9-335A0A36A309}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DAL</RootNamespace>
-    <AssemblyName>DAL</AssemblyName>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,10 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBhelp.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="Bookclass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Userhelp.cs" />
+    <Compile Include="MU_rearder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
