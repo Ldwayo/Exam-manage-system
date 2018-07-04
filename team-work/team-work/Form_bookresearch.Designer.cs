@@ -161,34 +161,34 @@
             // 
             // change_book
             // 
-            this.change_book.Location = new System.Drawing.Point(453, 493);
+            this.change_book.Location = new System.Drawing.Point(520, 493);
             this.change_book.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.change_book.Name = "change_book";
-            this.change_book.Size = new System.Drawing.Size(102, 33);
+            this.change_book.Size = new System.Drawing.Size(84, 33);
             this.change_book.TabIndex = 2;
             this.change_book.Text = "修改图书信息";
             this.change_book.UseVisualStyleBackColor = true;
-            this.change_book.Click += new System.EventHandler(this.change_book_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(569, 493);
+            this.button3.Location = new System.Drawing.Point(609, 493);
             this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(81, 33);
+            this.button3.Size = new System.Drawing.Size(56, 33);
             this.button3.TabIndex = 2;
             this.button3.Text = "删除图书";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(666, 493);
+            this.button4.Location = new System.Drawing.Point(670, 493);
             this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(56, 33);
             this.button4.TabIndex = 2;
-            this.button4.Text = "退出";
+            this.button4.Text = "返回";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form_bookresearch
             // 
