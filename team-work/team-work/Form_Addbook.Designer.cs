@@ -52,6 +52,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label10 = new System.Windows.Forms.Label();
+            this.book_count = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -66,8 +68,8 @@
             // 
             // book_id
             // 
-            this.book_id.Location = new System.Drawing.Point(137, 25);
-            this.book_id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.book_id.Location = new System.Drawing.Point(137, 28);
+            this.book_id.Margin = new System.Windows.Forms.Padding(2);
             this.book_id.Name = "book_id";
             this.book_id.Size = new System.Drawing.Size(119, 21);
             this.book_id.TabIndex = 1;
@@ -146,7 +148,7 @@
             // name
             // 
             this.name.Location = new System.Drawing.Point(137, 63);
-            this.name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.name.Margin = new System.Windows.Forms.Padding(2);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(119, 21);
             this.name.TabIndex = 1;
@@ -155,7 +157,7 @@
             // author
             // 
             this.author.Location = new System.Drawing.Point(137, 101);
-            this.author.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.author.Margin = new System.Windows.Forms.Padding(2);
             this.author.Name = "author";
             this.author.Size = new System.Drawing.Size(119, 21);
             this.author.TabIndex = 1;
@@ -164,7 +166,7 @@
             // publish
             // 
             this.publish.Location = new System.Drawing.Point(137, 139);
-            this.publish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.publish.Margin = new System.Windows.Forms.Padding(2);
             this.publish.Name = "publish";
             this.publish.Size = new System.Drawing.Size(119, 21);
             this.publish.TabIndex = 1;
@@ -173,7 +175,7 @@
             // price
             // 
             this.price.Location = new System.Drawing.Point(137, 267);
-            this.price.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.price.Margin = new System.Windows.Forms.Padding(2);
             this.price.Name = "price";
             this.price.Size = new System.Drawing.Size(119, 21);
             this.price.TabIndex = 1;
@@ -182,7 +184,7 @@
             // class_id
             // 
             this.class_id.Location = new System.Drawing.Point(137, 339);
-            this.class_id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.class_id.Margin = new System.Windows.Forms.Padding(2);
             this.class_id.Name = "class_id";
             this.class_id.Size = new System.Drawing.Size(119, 21);
             this.class_id.TabIndex = 1;
@@ -191,7 +193,7 @@
             // pubdate
             // 
             this.pubdate.Location = new System.Drawing.Point(137, 301);
-            this.pubdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pubdate.Margin = new System.Windows.Forms.Padding(2);
             this.pubdate.Name = "pubdate";
             this.pubdate.Size = new System.Drawing.Size(151, 21);
             this.pubdate.TabIndex = 2;
@@ -205,7 +207,7 @@
             // introduction
             // 
             this.introduction.Location = new System.Drawing.Point(137, 174);
-            this.introduction.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.introduction.Margin = new System.Windows.Forms.Padding(2);
             this.introduction.Name = "introduction";
             this.introduction.Size = new System.Drawing.Size(245, 76);
             this.introduction.TabIndex = 4;
@@ -214,18 +216,19 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(134, 399);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(69, 444);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 27);
             this.button1.TabIndex = 5;
             this.button1.Text = "确认添加";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(218, 399);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Location = new System.Drawing.Point(153, 444);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(66, 27);
             this.button2.TabIndex = 5;
@@ -235,7 +238,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(304, 401);
+            this.button3.Location = new System.Drawing.Point(239, 446);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 6;
@@ -274,11 +277,30 @@
             this.radioButton2.Text = "1";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(70, 408);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 12);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "可借数量：";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // book_count
+            // 
+            this.book_count.Location = new System.Drawing.Point(137, 405);
+            this.book_count.Name = "book_count";
+            this.book_count.Size = new System.Drawing.Size(100, 21);
+            this.book_count.TabIndex = 11;
+            // 
             // Form_Addbook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(422, 452);
+            this.ClientSize = new System.Drawing.Size(422, 497);
+            this.Controls.Add(this.book_count);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label9);
@@ -301,7 +323,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_Addbook";
             this.Text = "Form_Addbook";
             this.ResumeLayout(false);
@@ -334,5 +356,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox book_count;
     }
 }
