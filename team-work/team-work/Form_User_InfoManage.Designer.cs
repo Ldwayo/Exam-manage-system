@@ -1,6 +1,6 @@
 ﻿namespace team_work
 {
-    partial class Form_User_Information_Management
+    partial class Form_User_InfoManage
     {
         /// <summary>
         /// Required designer variable.

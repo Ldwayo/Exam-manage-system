@@ -66,7 +66,7 @@ namespace team_work
 
         private void 用户信息管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form form = new Form_User_Information_Management();
+            Form form = new Form_User_InfoManage();
             form.MdiParent = this;
             form.Show();
             form.Dock = DockStyle.Fill;
@@ -74,7 +74,7 @@ namespace team_work
 
         private void 管理员信息管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form form = new Form_Administrator_Information_Management();
+            Form form = new Form_Admin_infoManage();
             form.MdiParent = this;
             form.Show();
             form.Dock = DockStyle.Fill;

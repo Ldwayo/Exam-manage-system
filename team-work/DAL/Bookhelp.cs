@@ -26,9 +26,9 @@ namespace DAL
             }
         }
 
-        public static bool SearchBook(string searchinfo)
+        /*public static bool SearchBook(string searchinfo)
         {
 
-        }
+        }*/
     }
 }

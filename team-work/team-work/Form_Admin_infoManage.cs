@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace team_work
 {
-    public partial class Form_Administrator_Information_Management : Form
+    public partial class Form_Admin_infoManage : Form
     {
-        public Form_Administrator_Information_Management()
+        public Form_Admin_infoManage()
         {
             InitializeComponent();
         }
