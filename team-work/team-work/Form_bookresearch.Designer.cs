@@ -202,6 +202,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form_bookresearch";
             this.Text = "Form_bookresearch";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form_bookresearch_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

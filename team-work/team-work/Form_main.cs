@@ -22,6 +22,12 @@ namespace team_work
             {
                 信息管理ToolStripMenuItem.Visible = false;
                 图书管理ToolStripMenuItem.Visible = false;
+                管理员密码修改ToolStripMenuItem.Visible = false;
+            }
+            else
+            {
+                密码修改ToolStripMenuItem.Visible = false;
+                图书借阅ToolStripMenuItem.Visible = false;
             }
         }
 
@@ -53,7 +59,7 @@ namespace team_work
 
         private void 密码修改ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form form = new Changepassword();
+            Form form = new Changepassword(false);
             form.MdiParent = this;
             form.Show();
             form.Dock = DockStyle.Fill;
@@ -88,6 +94,27 @@ namespace team_work
         private void 我的信息ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form form = new Form_My_Information();
+            form.MdiParent = this;
+            form.Show();
+            form.Dock = DockStyle.Fill;
+        }
+
+        private void 管理员密码修改ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new Changepassword(true);
+            form.MdiParent = this;
+            form.Show();
+            form.Dock = DockStyle.Fill;
+        }
+
+        private void 图书借阅ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 借阅ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new Lend_Book();
             form.MdiParent = this;
             form.Show();
             form.Dock = DockStyle.Fill;

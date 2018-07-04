@@ -40,7 +40,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(173, 114);
+            this.label1.Location = new System.Drawing.Point(65, 65);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 15);
@@ -49,7 +49,7 @@
             // 
             // new_password
             // 
-            this.new_password.Location = new System.Drawing.Point(279, 110);
+            this.new_password.Location = new System.Drawing.Point(171, 61);
             this.new_password.Margin = new System.Windows.Forms.Padding(4);
             this.new_password.MaxLength = 15;
             this.new_password.Name = "new_password";
@@ -61,7 +61,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(173, 168);
+            this.label2.Location = new System.Drawing.Point(65, 119);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 15);
@@ -70,7 +70,7 @@
             // 
             // makesure_new_password
             // 
-            this.makesure_new_password.Location = new System.Drawing.Point(279, 164);
+            this.makesure_new_password.Location = new System.Drawing.Point(171, 115);
             this.makesure_new_password.Margin = new System.Windows.Forms.Padding(4);
             this.makesure_new_password.MaxLength = 15;
             this.makesure_new_password.Name = "makesure_new_password";
@@ -81,7 +81,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(176, 242);
+            this.button1.Location = new System.Drawing.Point(68, 193);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 29);
@@ -92,7 +92,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(284, 242);
+            this.button2.Location = new System.Drawing.Point(176, 193);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(105, 29);
@@ -103,7 +103,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(397, 242);
+            this.button3.Location = new System.Drawing.Point(289, 193);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(95, 29);
@@ -116,7 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 382);
+            this.ClientSize = new System.Drawing.Size(445, 267);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

@@ -17,12 +17,22 @@ namespace team_work
             InitializeComponent();
         }
 
+        private void init_grid()
+        {
+
+        }
+
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_Admin_infoManage_Load(object sender, EventArgs e)
         {
 
         }
