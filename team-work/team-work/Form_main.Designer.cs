@@ -105,14 +105,14 @@
             // 用户信息管理ToolStripMenuItem
             // 
             this.用户信息管理ToolStripMenuItem.Name = "用户信息管理ToolStripMenuItem";
-            this.用户信息管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.用户信息管理ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.用户信息管理ToolStripMenuItem.Text = "用户信息管理";
             this.用户信息管理ToolStripMenuItem.Click += new System.EventHandler(this.用户信息管理ToolStripMenuItem_Click);
             // 
             // 管理员信息管理ToolStripMenuItem
             // 
             this.管理员信息管理ToolStripMenuItem.Name = "管理员信息管理ToolStripMenuItem";
-            this.管理员信息管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.管理员信息管理ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.管理员信息管理ToolStripMenuItem.Text = "管理员信息管理";
             this.管理员信息管理ToolStripMenuItem.Click += new System.EventHandler(this.管理员信息管理ToolStripMenuItem_Click);
             // 
@@ -128,14 +128,14 @@
             // 添加图书信息ToolStripMenuItem
             // 
             this.添加图书信息ToolStripMenuItem.Name = "添加图书信息ToolStripMenuItem";
-            this.添加图书信息ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.添加图书信息ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.添加图书信息ToolStripMenuItem.Text = "添加图书信息";
             this.添加图书信息ToolStripMenuItem.Click += new System.EventHandler(this.添加图书信息ToolStripMenuItem_Click);
             // 
             // 图书信息查询ToolStripMenuItem
             // 
             this.图书信息查询ToolStripMenuItem.Name = "图书信息查询ToolStripMenuItem";
-            this.图书信息查询ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.图书信息查询ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.图书信息查询ToolStripMenuItem.Text = "图书信息查询";
             this.图书信息查询ToolStripMenuItem.Click += new System.EventHandler(this.图书信息查询ToolStripMenuItem_Click);
             // 
@@ -170,7 +170,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_main";
             this.Text = "Form_main";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form_main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -107,7 +107,7 @@
             this.user_type.Name = "user_type";
             this.user_type.Size = new System.Drawing.Size(87, 20);
             this.user_type.TabIndex = 6;
-            this.user_type.Text = "   管理员";
+            this.user_type.Text = "用户";
             this.user_type.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
@@ -176,7 +176,6 @@
             this.Name = "Form_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "图书管理系统—登录界面";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form_LoginTest_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

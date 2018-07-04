@@ -42,6 +42,19 @@ namespace DAL
             return DBhelp.ExecuteReader(stringBuilder.ToString());
         }
 
+        //check admin password
+        public static SqlDataReader adminPassword(string Uid, string pwd)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("select * from admin");
+            stringBuilder.Append(" where ");
+            stringBuilder.Append("admin_id=");
+            stringBuilder.Append(Uid);
+            stringBuilder.Append(" and password=");
+            stringBuilder.Append(pwd);
+            return DBhelp.ExecuteReader(stringBuilder.ToString());
+        }
+
         public static bool ChangePassword(string Uid, string pwd)
         {
             StringBuilder stringBuilder = new StringBuilder();

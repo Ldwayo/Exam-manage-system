@@ -44,16 +44,29 @@ namespace team_work
             {
                 if (user_type.SelectedItem.ToString().Trim().Equals("用户"))
                 {
-                    MessageBox.Show("用户登陆！");
-                }
-                else
-                {
                     Userhelp.reuid(uid);
                     SqlDataReader sqlDataReader;
                     sqlDataReader = Userhelp.Password(uid, pwd);
                     if (sqlDataReader.Read())
                     {
-                        Form_main form = new Form_main();
+                        Form_main form = new Form_main(false);
+                        form.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("密码错误！");
+                    }
+                    sqlDataReader.Close();
+                }
+                else
+                {
+                    Userhelp.reuid(uid);
+                    SqlDataReader sqlDataReader;
+                    sqlDataReader = Userhelp.adminPassword(uid, pwd);
+                    if (sqlDataReader.Read())
+                    {
+                        Form_main form = new Form_main(true);
                         form.Show();
                         this.Hide();
                     }
