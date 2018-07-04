@@ -76,6 +76,20 @@ namespace DAL
 
         }
 
+        public static bool register(string strsql)
+        {
+            int rows = DBhelp.ExecuteNonQuery(strsql);
+
+            if (rows > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public static DataTable SelectAdmin()
         {
             StringBuilder stringBuilder = new StringBuilder();
