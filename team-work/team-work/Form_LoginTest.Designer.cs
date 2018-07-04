@@ -176,7 +176,6 @@
             this.Name = "Form_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "图书管理系统—登录界面";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form_LoginTest_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
