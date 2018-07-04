@@ -24,7 +24,7 @@ namespace team_work
 
         private void button2_Click(object sender, EventArgs e)
         {
-            reader_id.Text = "";
+            admin_id.Text = "";
             name.Text = "";
             address.Text = "";
             tel.Text = "";

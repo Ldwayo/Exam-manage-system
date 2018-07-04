@@ -51,6 +51,18 @@
     <Compile Include="Changepassword.Designer.cs">
       <DependentUpon>Changepassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Administrator_Information_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Administrator_Information_Management.Designer.cs">
+      <DependentUpon>Form_Administrator_Information_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_User_Information_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_User_Information_Management.Designer.cs">
+      <DependentUpon>Form_User_Information_Management.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Addbook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     <Compile Include="Form_main.Designer.cs">
       <DependentUpon>Form_main.cs</DependentUpon>
     </Compile>
+    <Compile Include="My_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My_Information.Designer.cs">
+      <DependentUpon>My_Information.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.cs">
@@ -85,6 +103,12 @@
     </Compile>
     <EmbeddedResource Include="Changepassword.resx">
       <DependentUpon>Changepassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Administrator_Information_Management.resx">
+      <DependentUpon>Form_Administrator_Information_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_User_Information_Management.resx">
+      <DependentUpon>Form_User_Information_Management.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Addbook.resx">
       <DependentUpon>Form_Addbook.cs</DependentUpon>
@@ -97,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_main.resx">
       <DependentUpon>Form_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My_Information.resx">
+      <DependentUpon>My_Information.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

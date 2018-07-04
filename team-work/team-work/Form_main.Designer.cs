@@ -69,12 +69,14 @@
             this.系统设置ToolStripMenuItem.Name = "系统设置ToolStripMenuItem";
             this.系统设置ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.系统设置ToolStripMenuItem.Text = "系统设置";
+            this.系统设置ToolStripMenuItem.Click += new System.EventHandler(this.系统设置ToolStripMenuItem_Click);
             // 
             // 我的信息ToolStripMenuItem
             // 
             this.我的信息ToolStripMenuItem.Name = "我的信息ToolStripMenuItem";
             this.我的信息ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.我的信息ToolStripMenuItem.Text = "我的信息";
+            this.我的信息ToolStripMenuItem.Click += new System.EventHandler(this.我的信息ToolStripMenuItem_Click);
             // 
             // 密码修改ToolStripMenuItem
             // 
@@ -105,12 +107,14 @@
             this.用户信息管理ToolStripMenuItem.Name = "用户信息管理ToolStripMenuItem";
             this.用户信息管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.用户信息管理ToolStripMenuItem.Text = "用户信息管理";
+            this.用户信息管理ToolStripMenuItem.Click += new System.EventHandler(this.用户信息管理ToolStripMenuItem_Click);
             // 
             // 管理员信息管理ToolStripMenuItem
             // 
             this.管理员信息管理ToolStripMenuItem.Name = "管理员信息管理ToolStripMenuItem";
             this.管理员信息管理ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.管理员信息管理ToolStripMenuItem.Text = "管理员信息管理";
+            this.管理员信息管理ToolStripMenuItem.Click += new System.EventHandler(this.管理员信息管理ToolStripMenuItem_Click);
             // 
             // 图书管理ToolStripMenuItem
             // 
@@ -163,7 +167,7 @@
             this.ClientSize = new System.Drawing.Size(962, 565);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_main";
             this.Text = "Form_main";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

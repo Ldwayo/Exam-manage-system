@@ -66,6 +66,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "图书查询";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button1
             // 
@@ -108,6 +109,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(94, 21);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
