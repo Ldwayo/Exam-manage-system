@@ -174,3 +174,6 @@ Drop TABLE IF EXISTS reader_card
 
 ALTER Table reader_info
     ADD password VARCHAR(15) Not NULL DEFAULT '11111';
+
+ALTER Table book_info
+	ADD book_count int Not Null DEFAULT 2;
