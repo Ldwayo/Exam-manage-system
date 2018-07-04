@@ -59,9 +59,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(9, 10);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(732, 130);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -70,7 +70,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(526, 58);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(70, 28);
             this.button1.TabIndex = 2;
@@ -80,7 +80,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(316, 81);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(121, 21);
             this.textBox4.TabIndex = 1;
@@ -88,7 +88,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(316, 41);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(121, 21);
             this.textBox3.TabIndex = 1;
@@ -96,7 +96,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(110, 81);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(94, 21);
             this.textBox2.TabIndex = 1;
@@ -104,7 +104,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(110, 41);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(94, 21);
             this.textBox1.TabIndex = 1;
@@ -153,7 +153,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(9, 167);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(732, 307);
@@ -161,28 +161,29 @@
             // 
             // change_book
             // 
-            this.change_book.Location = new System.Drawing.Point(520, 493);
-            this.change_book.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.change_book.Location = new System.Drawing.Point(471, 493);
+            this.change_book.Margin = new System.Windows.Forms.Padding(2);
             this.change_book.Name = "change_book";
-            this.change_book.Size = new System.Drawing.Size(84, 33);
+            this.change_book.Size = new System.Drawing.Size(102, 33);
             this.change_book.TabIndex = 2;
             this.change_book.Text = "修改图书信息";
             this.change_book.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(609, 493);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Location = new System.Drawing.Point(577, 493);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 33);
+            this.button3.Size = new System.Drawing.Size(78, 33);
             this.button3.TabIndex = 2;
             this.button3.Text = "删除图书";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(670, 493);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(56, 33);
             this.button4.TabIndex = 2;
@@ -200,7 +201,7 @@
             this.Controls.Add(this.change_book);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_bookresearch";
             this.Text = "Form_bookresearch";
             this.groupBox1.ResumeLayout(false);
