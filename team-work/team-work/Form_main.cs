@@ -12,10 +12,17 @@ namespace team_work
 {
     public partial class Form_main : Form
     {
-        public Form_main()
+        bool admin;
+        public Form_main(bool admin)
         {
             InitializeComponent();
+            this.admin = admin;
             this.IsMdiContainer = true;
+            if (!admin)
+            {
+                信息管理ToolStripMenuItem.Visible = false;
+                图书管理ToolStripMenuItem.Visible = false;
+            }
         }
 
         private void 信息管理ToolStripMenuItem_Click(object sender, EventArgs e)
