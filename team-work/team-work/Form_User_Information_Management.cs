@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
 
 namespace team_work
 {
@@ -15,6 +16,15 @@ namespace team_work
         public Form_User_Information_Management()
         {
             InitializeComponent();
+            init_grid();
+        }
+
+        private void init_grid()
+        {
+            string strsql = "select * from reader_info";
+            DataTable dataTable = DBhelp.GetDataTable(strsql);
+            dataGridView1.DataSource = dataTable;
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -33,6 +43,11 @@ namespace team_work
         }
 
         private void password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_User_Information_Management_Load(object sender, EventArgs e)
         {
 
         }
