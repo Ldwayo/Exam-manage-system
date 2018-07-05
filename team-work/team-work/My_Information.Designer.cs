@@ -30,6 +30,7 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.password = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.admin_id = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,9 +75,9 @@
             this.groupBox1.Controls.Add(this.admin_id);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(609, 363);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -87,7 +87,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(445, 302);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(87, 35);
             this.button3.TabIndex = 19;
@@ -95,20 +95,33 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button1
+            // 
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(277, 302);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 35);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "保存";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(106, 302);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 35);
             this.button2.TabIndex = 18;
             this.button2.Text = "修改";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // password
             // 
             this.password.Location = new System.Drawing.Point(440, 232);
-            this.password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.password.Margin = new System.Windows.Forms.Padding(4);
             this.password.Name = "password";
             this.password.ReadOnly = true;
             this.password.Size = new System.Drawing.Size(133, 25);
@@ -128,7 +141,7 @@
             // tel
             // 
             this.tel.Location = new System.Drawing.Point(149, 232);
-            this.tel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tel.Margin = new System.Windows.Forms.Padding(4);
             this.tel.Name = "tel";
             this.tel.ReadOnly = true;
             this.tel.Size = new System.Drawing.Size(139, 25);
@@ -148,7 +161,7 @@
             // address
             // 
             this.address.Location = new System.Drawing.Point(441, 169);
-            this.address.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.address.Margin = new System.Windows.Forms.Padding(4);
             this.address.Name = "address";
             this.address.ReadOnly = true;
             this.address.Size = new System.Drawing.Size(132, 25);
@@ -169,7 +182,7 @@
             // 
             this.birth.Enabled = false;
             this.birth.Location = new System.Drawing.Point(149, 169);
-            this.birth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.birth.Margin = new System.Windows.Forms.Padding(4);
             this.birth.Name = "birth";
             this.birth.Size = new System.Drawing.Size(139, 25);
             this.birth.TabIndex = 10;
@@ -190,7 +203,7 @@
             this.sex_woman.AutoSize = true;
             this.sex_woman.Enabled = false;
             this.sex_woman.Location = new System.Drawing.Point(531, 119);
-            this.sex_woman.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sex_woman.Margin = new System.Windows.Forms.Padding(4);
             this.sex_woman.Name = "sex_woman";
             this.sex_woman.Size = new System.Drawing.Size(43, 19);
             this.sex_woman.TabIndex = 8;
@@ -203,7 +216,7 @@
             this.sex_man.AutoSize = true;
             this.sex_man.Enabled = false;
             this.sex_man.Location = new System.Drawing.Point(443, 117);
-            this.sex_man.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sex_man.Margin = new System.Windows.Forms.Padding(4);
             this.sex_man.Name = "sex_man";
             this.sex_man.Size = new System.Drawing.Size(43, 19);
             this.sex_man.TabIndex = 7;
@@ -224,7 +237,7 @@
             // name
             // 
             this.name.Location = new System.Drawing.Point(149, 113);
-            this.name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.name.Margin = new System.Windows.Forms.Padding(4);
             this.name.Name = "name";
             this.name.ReadOnly = true;
             this.name.Size = new System.Drawing.Size(139, 25);
@@ -244,7 +257,7 @@
             // reader_id
             // 
             this.reader_id.Location = new System.Drawing.Point(443, 54);
-            this.reader_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.reader_id.Margin = new System.Windows.Forms.Padding(4);
             this.reader_id.Name = "reader_id";
             this.reader_id.ReadOnly = true;
             this.reader_id.Size = new System.Drawing.Size(131, 25);
@@ -265,7 +278,7 @@
             // admin_id
             // 
             this.admin_id.Location = new System.Drawing.Point(149, 51);
-            this.admin_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.admin_id.Margin = new System.Windows.Forms.Padding(4);
             this.admin_id.Name = "admin_id";
             this.admin_id.ReadOnly = true;
             this.admin_id.Size = new System.Drawing.Size(139, 25);
@@ -282,24 +295,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "账号：";
             // 
-            // button1
-            // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(277, 302);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 35);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "保存";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Form_My_Information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(657, 395);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_My_Information";
             this.Text = "My_Information";
             this.Load += new System.EventHandler(this.My_Information_Load);

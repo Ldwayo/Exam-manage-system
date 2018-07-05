@@ -21,12 +21,14 @@ namespace DAL
         //search id exists
         public static SqlDataReader ExistsID(string Uid)
         {
+            Uid = Uid.Trim();
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append("select count(1) from reader_info");
+            stringBuilder.Append("select * from reader_info");
             stringBuilder.Append(" where ");
             stringBuilder.Append("reader_id=");
             stringBuilder.Append(Uid);
-            return DBhelp.ExecuteReader(stringBuilder.ToString());
+            SqlDataReader sqlDataReader = DBhelp.ExecuteReader(stringBuilder.ToString());
+            return sqlDataReader;
         }
 
         //check password
@@ -53,6 +55,25 @@ namespace DAL
             stringBuilder.Append(" and password=");
             stringBuilder.Append(pwd);
             return DBhelp.ExecuteReader(stringBuilder.ToString());
+        }
+
+        public static bool Changeinfo(string Uid, string info)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("update reader_info set ");
+            stringBuilder.Append(info);
+            stringBuilder.Append(" where reader_id=");
+            stringBuilder.Append(Uid);
+            int rows = DBhelp.ExecuteNonQuery(stringBuilder.ToString());
+
+            if (rows > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public static bool ChangePassword(string Uid, string pwd)

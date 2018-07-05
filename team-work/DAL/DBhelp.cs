@@ -51,6 +51,7 @@ namespace DAL
         public static SqlDataReader ExecuteReader(string strSql)
         {
             SqlCommand cmd = Command(strSql);
+            cmd.CommandType = CommandType.Text;
             return cmd.ExecuteReader();
         }
 
