@@ -9,6 +9,7 @@ namespace DAL
 {
     public class Bookhelp
     {
+        //增加新书
         public static bool AddBookinfo(string addinfo)
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -45,6 +46,61 @@ namespace DAL
             
             DataTable data =  DBhelp.GetDataTable(queryBuilder.ToString());
             return data;
+        }
+
+        //更新图书
+        public static bool UpdateBook(string bookid,string name,string author,string press,
+            string intro,string price,string pubdate, string classid,string state,string bookCount )
+        {
+            StringBuilder updateBuilder = new StringBuilder();
+            updateBuilder.Append("update book_info set ");
+            updateBuilder.Append("name = '");
+            updateBuilder.Append(name);
+            updateBuilder.Append("' , author = '");
+            updateBuilder.Append(author);
+            updateBuilder.Append("' , publish = '");
+            updateBuilder.Append(press);
+            updateBuilder.Append("' , introduction = '");
+            updateBuilder.Append(intro);
+            updateBuilder.Append("' , price = '");
+            updateBuilder.Append(price);
+            updateBuilder.Append("' , pubdate = '");
+            updateBuilder.Append(pubdate);
+            updateBuilder.Append("' , class_id = '");
+            updateBuilder.Append(classid);
+            updateBuilder.Append("' , state = '");
+            updateBuilder.Append(state);
+            updateBuilder.Append("' , book_count = '");
+            updateBuilder.Append(bookCount);
+            updateBuilder.Append("' where book_id = '");
+            updateBuilder.Append(bookid+"'");
+
+            int row = DBhelp.ExecuteNonQuery(updateBuilder.ToString());
+            if (row > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        //删除图书
+        public static bool DeleteBook(string bookid)
+        {
+            StringBuilder deleteBuilder = new StringBuilder();
+            deleteBuilder.Append("delete from book_info where book_id = '");
+            deleteBuilder.Append(bookid+"'");
+            int row = DBhelp.ExecuteNonQuery(deleteBuilder.ToString());
+            if (row > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
