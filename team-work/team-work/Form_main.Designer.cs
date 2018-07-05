@@ -69,9 +69,9 @@
             // 
             this.系统设置ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.我的信息ToolStripMenuItem,
+            this.管理员密码修改ToolStripMenuItem,
             this.密码修改ToolStripMenuItem,
-            this.退出系统ToolStripMenuItem,
-            this.管理员密码修改ToolStripMenuItem});
+            this.退出系统ToolStripMenuItem});
             this.系统设置ToolStripMenuItem.Name = "系统设置ToolStripMenuItem";
             this.系统设置ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.系统设置ToolStripMenuItem.Text = "系统设置";
