@@ -46,7 +46,6 @@ namespace team_work
             Form form = new Form_Addbook();
             form.MdiParent = this;
             form.Show();
-            form.Dock = DockStyle.Fill;
         }
 
         private void 图书信息查询ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -54,7 +53,6 @@ namespace team_work
             Form form = new Form_bookresearch();
             form.MdiParent = this;
             form.Show();
-            form.Dock = DockStyle.Fill;
         }
 
         private void 密码修改ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -62,7 +60,6 @@ namespace team_work
             Form form = new Changepassword(false);
             form.MdiParent = this;
             form.Show();
-            form.Dock = DockStyle.Fill;
         }
 
         private void 退出系统ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -75,7 +72,6 @@ namespace team_work
             Form form = new Form_User_InfoManage();
             form.MdiParent = this;
             form.Show();
-            form.Dock = DockStyle.Fill;
         }
 
         private void 管理员信息管理ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -83,7 +79,6 @@ namespace team_work
             Form form = new Form_Admin_infoManage();
             form.MdiParent = this;
             form.Show();
-            form.Dock = DockStyle.Fill;
         }
 
         private void 系统设置ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -96,7 +91,6 @@ namespace team_work
             Form form = new Form_My_Information();
             form.MdiParent = this;
             form.Show();
-            form.Dock = DockStyle.Fill;
         }
 
         private void 管理员密码修改ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -104,7 +98,6 @@ namespace team_work
             Form form = new Changepassword(true);
             form.MdiParent = this;
             form.Show();
-            form.Dock = DockStyle.Fill;
         }
 
         private void 图书借阅ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -117,7 +110,6 @@ namespace team_work
             Form form = new Lend_Book();
             form.MdiParent = this;
             form.Show();
-            form.Dock = DockStyle.Fill;
         }
     }
 }
