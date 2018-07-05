@@ -101,7 +101,7 @@ namespace team_work
             form.Show();
         }
 
-        private void 图书借阅ToolStripMenuItem_Click(object sender, EventArgs e)
+        /*private void 图书借阅ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
@@ -109,6 +109,25 @@ namespace team_work
         private void 借阅ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form form = new Lend_Book();
+            form.MdiParent = this;
+            form.Show();
+        }*/
+
+        private void 图书借阅ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 借书ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new Lend_Book();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void 还书ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new Back_Book();
             form.MdiParent = this;
             form.Show();
         }

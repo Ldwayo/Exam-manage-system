@@ -32,9 +32,31 @@ namespace team_work
             this.Close();
         }
 
+        private void ClearTextBox()
+        {
+            textBox5.Text = "";
+            textBox4.Text = "";
+            textBox3.Text = "";
+            textBox2.Text = "";
+            introduction.Text = "";
+            price.Text = "";
+            class_id.Text = "";
+        }
+        //删除所选图书
         private void button3_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                Bookhelp.DeleteBook(textBox5.Text.ToString());
+                MessageBox.Show("删除成功,请重新查询以更新显示表单");
+                ClearTextBox();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -52,6 +74,7 @@ namespace team_work
 
         }
 
+        //查询
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -99,9 +122,56 @@ namespace team_work
             
         }
 
-        //增加书籍
         private void add_book_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void bookgridview_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            textBox5.Text = bookgridview.Rows[e.RowIndex].Cells[0].Value.ToString();
+            textBox4.Text = bookgridview.Rows[e.RowIndex].Cells[1].Value.ToString();
+            textBox3.Text = bookgridview.Rows[e.RowIndex].Cells[2].Value.ToString();
+            textBox2.Text = bookgridview.Rows[e.RowIndex].Cells[3].Value.ToString();
+            introduction.Text =  bookgridview.Rows[e.RowIndex].Cells[4].Value.ToString();
+            price.Text = bookgridview.Rows[e.RowIndex].Cells[5].Value.ToString();
+            pubdate.Text =  bookgridview.Rows[e.RowIndex].Cells[6].Value.ToString();
+            class_id.Text = bookgridview.Rows[e.RowIndex].Cells[7].Value.ToString();
+            if (bookgridview.Rows[e.RowIndex].Cells[8].Value.ToString() == "0")
+            {
+                radioButton1.Checked = true;
+            }
+            else
+            {
+                radioButton2.Checked = true;
+            }
+            book_count.Text = bookgridview.Rows[e.RowIndex].Cells[9].Value.ToString();
+        }
+
+        //修改图书信息
+        private void change_book_Click(object sender, EventArgs e)
+        {
+            string state = "";
+            if (radioButton1.Checked)
+            {
+                state = "0";
+            }
+            else
+            {
+                state = "1";
+            }
+            try
+            {
+                Bookhelp.UpdateBook(textBox5.Text.ToString(),textBox4.Text.ToString(), textBox3.Text.ToString(), 
+                textBox2.Text.ToString(),introduction.Text.ToString(),
+                price.Text.ToString(),pubdate.Value.ToString(),class_id.Text.ToString(),state,book_count.Text.ToString());
+                MessageBox.Show("更新成功,请重新查询以更新显示表单");
+                ClearTextBox();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
     }
