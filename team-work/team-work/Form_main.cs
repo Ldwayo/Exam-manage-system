@@ -28,6 +28,7 @@ namespace team_work
             {
                 密码修改ToolStripMenuItem.Visible = false;
                 图书借阅ToolStripMenuItem.Visible = false;
+                我的信息ToolStripMenuItem.Visible = false;
             }
         }
 
@@ -108,6 +109,13 @@ namespace team_work
         private void 借阅ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form form = new Lend_Book();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void 管理员密码修改ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form form = new Changepassword(true);
             form.MdiParent = this;
             form.Show();
         }
