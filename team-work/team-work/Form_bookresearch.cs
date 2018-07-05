@@ -60,23 +60,31 @@ namespace team_work
             string bookName = "";
             string press = "";
 
-            switch (comboBox1.SelectedItem.ToString())
+            try
             {
-                case "书名":
-                    bookName = textBox1.Text.ToString();
-                    break;
-                case "图书编号":
-                    id = textBox1.Text.ToString();
-                    break;
-                case "作者":
-                    bookAuthor = textBox1.Text.ToString();
-                    break;
-                case "出版社":
-                    press = textBox1.Text.ToString();
-                    break;
-                default:
-                    MessageBox.Show("请勿修改选项");
-                    break;
+                switch (comboBox1.SelectedItem.ToString())
+                {
+                    case "书名":
+                        bookName = textBox1.Text.ToString();
+                        break;
+                    case "图书编号":
+                        id = textBox1.Text.ToString();
+                        break;
+                    case "作者":
+                        bookAuthor = textBox1.Text.ToString();
+                        break;
+                    case "出版社":
+                        press = textBox1.Text.ToString();
+                        break;
+                    default:
+                        MessageBox.Show("请勿修改选项");
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("请勿修改选项");
             }
             
             DataTable data = Bookhelp.QueryBook(id, bookAuthor, bookName, press);

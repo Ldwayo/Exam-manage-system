@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.publish = new System.Windows.Forms.TextBox();
             this.author = new System.Windows.Forms.TextBox();
@@ -43,8 +45,6 @@
             this.change_book = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bookgridview)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +63,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "图书查询";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "图书编号",
+            "作者",
+            "书名",
+            "出版社"});
+            this.comboBox1.Location = new System.Drawing.Point(68, 42);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 20);
+            this.comboBox1.TabIndex = 4;
+            this.comboBox1.Text = "书名";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(226, 42);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(237, 21);
+            this.textBox1.TabIndex = 3;
             // 
             // button1
             // 
@@ -190,27 +211,6 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(226, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 21);
-            this.textBox1.TabIndex = 3;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "图书编号",
-            "作者",
-            "书名",
-            "出版社"});
-            this.comboBox1.Location = new System.Drawing.Point(68, 42);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 20);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "书名";
-            // 
             // Form_bookresearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -232,7 +232,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_bookresearch";
             this.Text = "Form_bookresearch";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form_bookresearch_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
