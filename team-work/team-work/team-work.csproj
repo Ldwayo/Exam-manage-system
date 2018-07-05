@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Back_Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Back_Book.Designer.cs">
+      <DependentUpon>Back_Book.cs</DependentUpon>
+    </Compile>
     <Compile Include="Changepassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Back_Book.resx">
+      <DependentUpon>Back_Book.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Changepassword.resx">
       <DependentUpon>Changepassword.cs</DependentUpon>
     </EmbeddedResource>

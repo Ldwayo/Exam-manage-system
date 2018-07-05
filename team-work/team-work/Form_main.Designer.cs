@@ -171,6 +171,7 @@
             this.管理员密码修改ToolStripMenuItem.Name = "管理员密码修改ToolStripMenuItem";
             this.管理员密码修改ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.管理员密码修改ToolStripMenuItem.Text = "管理员密码修改";
+            this.管理员密码修改ToolStripMenuItem.Click += new System.EventHandler(this.管理员密码修改ToolStripMenuItem_Click_1);
             // 
             // 图书借阅ToolStripMenuItem
             // 
