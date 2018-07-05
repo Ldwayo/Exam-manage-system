@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -47,6 +48,59 @@ namespace team_work
         }
 
         private void Form_bookresearch_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            string id = "";
+            string bookAuthor = "";
+            string bookName = "";
+            string press = "";
+
+            try
+            {
+                switch (comboBox1.SelectedItem.ToString())
+                {
+                    case "书名":
+                        bookName = textBox1.Text.ToString();
+                        break;
+                    case "图书编号":
+                        id = textBox1.Text.ToString();
+                        break;
+                    case "作者":
+                        bookAuthor = textBox1.Text.ToString();
+                        break;
+                    case "出版社":
+                        press = textBox1.Text.ToString();
+                        break;
+                    default:
+                        MessageBox.Show("请勿修改选项");
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("请勿修改选项");
+            }
+            
+            DataTable data = Bookhelp.QueryBook(id, bookAuthor, bookName, press);
+            if (data.Rows.Count > 0)
+            {
+                bookgridview.DataSource = data;
+            }
+            else
+            {
+                MessageBox.Show("查无此书");
+            }
+            
+        }
+
+        //增加书籍
+        private void add_book_Click(object sender, EventArgs e)
         {
 
         }

@@ -44,8 +44,8 @@
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.管理员密码修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.图书借阅ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.借阅ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.归还ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.借书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.还书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,14 +54,14 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.系统设置ToolStripMenuItem,
-            this.图书借阅ToolStripMenuItem,
             this.信息管理ToolStripMenuItem,
             this.图书管理ToolStripMenuItem,
-            this.帮助ToolStripMenuItem});
+            this.帮助ToolStripMenuItem,
+            this.图书借阅ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1283, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1419, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -171,36 +171,33 @@
             this.管理员密码修改ToolStripMenuItem.Name = "管理员密码修改ToolStripMenuItem";
             this.管理员密码修改ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.管理员密码修改ToolStripMenuItem.Text = "管理员密码修改";
-            this.管理员密码修改ToolStripMenuItem.Click += new System.EventHandler(this.管理员密码修改ToolStripMenuItem_Click);
             // 
             // 图书借阅ToolStripMenuItem
             // 
             this.图书借阅ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.借阅ToolStripMenuItem,
-            this.归还ToolStripMenuItem});
+            this.借书ToolStripMenuItem,
+            this.还书ToolStripMenuItem});
             this.图书借阅ToolStripMenuItem.Name = "图书借阅ToolStripMenuItem";
             this.图书借阅ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
-            this.图书借阅ToolStripMenuItem.Text = "图书借还";
-            this.图书借阅ToolStripMenuItem.Click += new System.EventHandler(this.图书借阅ToolStripMenuItem_Click);
+            this.图书借阅ToolStripMenuItem.Text = "图书借阅";
             // 
-            // 借阅ToolStripMenuItem
+            // 借书ToolStripMenuItem
             // 
-            this.借阅ToolStripMenuItem.Name = "借阅ToolStripMenuItem";
-            this.借阅ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.借阅ToolStripMenuItem.Text = "借阅";
-            this.借阅ToolStripMenuItem.Click += new System.EventHandler(this.借阅ToolStripMenuItem_Click);
+            this.借书ToolStripMenuItem.Name = "借书ToolStripMenuItem";
+            this.借书ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.借书ToolStripMenuItem.Text = "借书";
             // 
-            // 归还ToolStripMenuItem
+            // 还书ToolStripMenuItem
             // 
-            this.归还ToolStripMenuItem.Name = "归还ToolStripMenuItem";
-            this.归还ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.归还ToolStripMenuItem.Text = "归还";
+            this.还书ToolStripMenuItem.Name = "还书ToolStripMenuItem";
+            this.还书ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.还书ToolStripMenuItem.Text = "还书";
             // 
             // Form_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1283, 706);
+            this.ClientSize = new System.Drawing.Size(1419, 812);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -232,7 +229,7 @@
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 管理员密码修改ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 图书借阅ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 借阅ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 归还ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 借书ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 还书ToolStripMenuItem;
     }
 }

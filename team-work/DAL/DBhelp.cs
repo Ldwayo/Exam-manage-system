@@ -17,7 +17,7 @@ namespace DAL
         {
             get
             {
-                /*Data Source=LAPTOP-O7FBE1PB\SQLEXPRESS;Initial Catalog=student;Integrated Security=True*/
+                /*Data Source=DESKTOP-3PF8DBI\SQLEXPRESS;Initial Catalog=Booksmanage;User ID=sa;Password=w123456*/
                 string strConn = @"Data Source=DESKTOP-3PF8DBI\SQLEXPRESS;Initial Catalog=Booksmanage;User ID=sa;Password=w123456";
                 if (connection == null)
                 {
