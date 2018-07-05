@@ -42,6 +42,7 @@ namespace team_work
             price.Text = "";
             class_id.Text = "";
         }
+
         //删除所选图书
         private void button3_Click(object sender, EventArgs e)
         {
@@ -172,6 +173,11 @@ namespace team_work
             {
                 MessageBox.Show(ex.Message);
             }
+
+        }
+
+        private void bookgridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

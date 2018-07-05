@@ -48,6 +48,68 @@ namespace DAL
             return data;
         }
 
+        public static bool Have_book(string bookid)
+        {
+            DataTable data = QueryBook(bookid, "", "", "");
+            string count = "";
+            object j = data.Columns;
+            count = data.Rows[0]["book_count"].ToString();
+            int c = int.Parse(count);
+            if(c != 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool LendBook(string bookid)
+        {
+            DataTable data = QueryBook(bookid, "", "", "");
+            string count="";
+            object j = data.Columns;
+            count = data.Rows[0]["book_count"].ToString();
+            int c = int.Parse(count);
+            if(c == 0)
+            {
+                return false;
+            }
+            else
+            {
+                c--;
+                if(UpdateBook_lend(bookid,c.ToString()))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+        }
+
+        public static bool UpdateBook_lend(string bookid, string bookCount)
+        {
+            StringBuilder updateBuilder = new StringBuilder();
+            updateBuilder.Append("update book_info set ");
+            updateBuilder.Append("book_count = '");
+            updateBuilder.Append(bookCount);
+            updateBuilder.Append("' where book_id = '");
+            updateBuilder.Append(bookid + "'");
+            int row = DBhelp.ExecuteNonQuery(updateBuilder.ToString());
+            if (row > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         //更新图书
         public static bool UpdateBook(string bookid,string name,string author,string press,
             string intro,string price,string pubdate, string classid,string state,string bookCount )

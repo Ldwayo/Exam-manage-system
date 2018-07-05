@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.系统设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.我的信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.管理员密码修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.密码修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出系统ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.信息管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,7 +43,6 @@
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.使用帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.管理员密码修改ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.图书借阅ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.借书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.还书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,21 +80,28 @@
             // 我的信息ToolStripMenuItem
             // 
             this.我的信息ToolStripMenuItem.Name = "我的信息ToolStripMenuItem";
-            this.我的信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.我的信息ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.我的信息ToolStripMenuItem.Text = "我的信息";
             this.我的信息ToolStripMenuItem.Click += new System.EventHandler(this.我的信息ToolStripMenuItem_Click);
+            // 
+            // 管理员密码修改ToolStripMenuItem
+            // 
+            this.管理员密码修改ToolStripMenuItem.Name = "管理员密码修改ToolStripMenuItem";
+            this.管理员密码修改ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.管理员密码修改ToolStripMenuItem.Text = "管理员密码修改";
+            this.管理员密码修改ToolStripMenuItem.Click += new System.EventHandler(this.管理员密码修改ToolStripMenuItem_Click_1);
             // 
             // 密码修改ToolStripMenuItem
             // 
             this.密码修改ToolStripMenuItem.Name = "密码修改ToolStripMenuItem";
-            this.密码修改ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.密码修改ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.密码修改ToolStripMenuItem.Text = "密码修改";
             this.密码修改ToolStripMenuItem.Click += new System.EventHandler(this.密码修改ToolStripMenuItem_Click);
             // 
             // 退出系统ToolStripMenuItem
             // 
             this.退出系统ToolStripMenuItem.Name = "退出系统ToolStripMenuItem";
-            this.退出系统ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.退出系统ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.退出系统ToolStripMenuItem.Text = "退出系统";
             this.退出系统ToolStripMenuItem.Click += new System.EventHandler(this.退出系统ToolStripMenuItem_Click);
             // 
@@ -111,14 +118,14 @@
             // 用户信息管理ToolStripMenuItem
             // 
             this.用户信息管理ToolStripMenuItem.Name = "用户信息管理ToolStripMenuItem";
-            this.用户信息管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.用户信息管理ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.用户信息管理ToolStripMenuItem.Text = "用户信息管理";
             this.用户信息管理ToolStripMenuItem.Click += new System.EventHandler(this.用户信息管理ToolStripMenuItem_Click);
             // 
             // 管理员信息管理ToolStripMenuItem
             // 
             this.管理员信息管理ToolStripMenuItem.Name = "管理员信息管理ToolStripMenuItem";
-            this.管理员信息管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.管理员信息管理ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.管理员信息管理ToolStripMenuItem.Text = "管理员信息管理";
             this.管理员信息管理ToolStripMenuItem.Click += new System.EventHandler(this.管理员信息管理ToolStripMenuItem_Click);
             // 
@@ -134,14 +141,14 @@
             // 添加图书信息ToolStripMenuItem
             // 
             this.添加图书信息ToolStripMenuItem.Name = "添加图书信息ToolStripMenuItem";
-            this.添加图书信息ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.添加图书信息ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.添加图书信息ToolStripMenuItem.Text = "添加图书信息";
             this.添加图书信息ToolStripMenuItem.Click += new System.EventHandler(this.添加图书信息ToolStripMenuItem_Click);
             // 
             // 图书信息查询ToolStripMenuItem
             // 
             this.图书信息查询ToolStripMenuItem.Name = "图书信息查询ToolStripMenuItem";
-            this.图书信息查询ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.图书信息查询ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.图书信息查询ToolStripMenuItem.Text = "图书信息查询";
             this.图书信息查询ToolStripMenuItem.Click += new System.EventHandler(this.图书信息查询ToolStripMenuItem_Click);
             // 
@@ -157,21 +164,14 @@
             // 使用帮助ToolStripMenuItem
             // 
             this.使用帮助ToolStripMenuItem.Name = "使用帮助ToolStripMenuItem";
-            this.使用帮助ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.使用帮助ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.使用帮助ToolStripMenuItem.Text = "使用帮助";
             // 
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.关于ToolStripMenuItem.Text = "关于";
-            // 
-            // 管理员密码修改ToolStripMenuItem
-            // 
-            this.管理员密码修改ToolStripMenuItem.Name = "管理员密码修改ToolStripMenuItem";
-            this.管理员密码修改ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.管理员密码修改ToolStripMenuItem.Text = "管理员密码修改";
-            this.管理员密码修改ToolStripMenuItem.Click += new System.EventHandler(this.管理员密码修改ToolStripMenuItem_Click_1);
             // 
             // 图书借阅ToolStripMenuItem
             // 
@@ -187,6 +187,7 @@
             this.借书ToolStripMenuItem.Name = "借书ToolStripMenuItem";
             this.借书ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.借书ToolStripMenuItem.Text = "借书";
+            this.借书ToolStripMenuItem.Click += new System.EventHandler(this.借书ToolStripMenuItem_Click_1);
             // 
             // 还书ToolStripMenuItem
             // 

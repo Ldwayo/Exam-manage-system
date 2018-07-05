@@ -18,6 +18,61 @@ namespace DAL
             ruid = Uid;
         }
 
+        public static bool Lend_num()
+        {
+            int count;
+            string c = "";
+            SqlDataReader sqlDataReader = ExistsID(ruid);
+            while (sqlDataReader.Read())
+            {
+                c = sqlDataReader["borrowable"].ToString();
+            }
+            sqlDataReader.Close();
+            count = int.Parse(c);
+            if(count != 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool User_lend()
+        {
+            int count;
+            string c = "";
+            SqlDataReader sqlDataReader = ExistsID(ruid);
+            while (sqlDataReader.Read())
+            {
+                c = sqlDataReader["borrowable"].ToString();
+            }
+            sqlDataReader.Close();
+            count = int.Parse(c);
+            if(count == 0)
+            {
+                return false;
+            }
+            else
+            {
+                count--;
+                StringBuilder stringBuilder = new StringBuilder();
+                stringBuilder.Append("update reader_info set borrowable='");
+                stringBuilder.Append(count);
+                stringBuilder.Append("' where reader_id='");
+                stringBuilder.Append(ruid+"'");
+                if (DBhelp.ExecuteNonQuery(stringBuilder.ToString()) > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
         //search id exists
         public static SqlDataReader ExistsID(string Uid)
         {
