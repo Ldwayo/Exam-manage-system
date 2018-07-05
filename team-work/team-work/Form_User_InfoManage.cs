@@ -11,9 +11,9 @@ using DAL;
 
 namespace team_work
 {
-    public partial class Form_User_Information_Management : Form
+    public partial class Form_User_InfoManage : Form
     {
-        public Form_User_Information_Management()
+        public Form_User_InfoManage()
         {
             InitializeComponent();
             init_grid();

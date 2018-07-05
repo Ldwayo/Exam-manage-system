@@ -13,9 +13,11 @@ namespace team_work
 {
     public partial class Changepassword : Form
     {
-        public Changepassword()
+        bool admin;
+        public Changepassword(bool admin)
         {
             InitializeComponent();
+            this.admin = admin;
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -48,19 +50,40 @@ namespace team_work
         {
             string p1 = new_password.Text.ToString().Trim();
             string p2 = makesure_new_password.Text.ToString().Trim();
-            if (!p1.Equals(p2))
+            if (p1.Equals("") || p2.Equals(""))
             {
-                MessageBox.Show("两次密码必须相同！");
+                MessageBox.Show("密码不能为空！");
             }
             else
             {
-                if(Userhelp.ChangePassword(Userhelp.ruid, p1))
+                if (!p1.Equals(p2))
                 {
-                    MessageBox.Show("更改密码成功！");
+                    MessageBox.Show("两次密码必须相同！");
                 }
                 else
                 {
-                    MessageBox.Show("更改密码失败！");
+                    if (!admin)
+                    {
+                        if (Userhelp.ChangePassword(Userhelp.ruid, p1))
+                        {
+                            MessageBox.Show("更改密码成功！");
+                        }
+                        else
+                        {
+                            MessageBox.Show("更改密码失败！");
+                        }
+                    }
+                    else
+                    {
+                        if (Userhelp.adminChangePassword(Userhelp.ruid, p1))
+                        {
+                            MessageBox.Show("更改密码成功！");
+                        }
+                        else
+                        {
+                            MessageBox.Show("更改密码失败！");
+                        }
+                    }
                 }
             }
         }

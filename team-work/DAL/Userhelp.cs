@@ -76,6 +76,27 @@ namespace DAL
 
         }
 
+        public static bool adminChangePassword(string Uid, string pwd)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("update admin set ");
+            stringBuilder.Append("password=");
+            stringBuilder.Append(pwd);
+            stringBuilder.Append("where admin_id=");
+            stringBuilder.Append(Uid);
+            int rows = DBhelp.ExecuteNonQuery(stringBuilder.ToString());
+
+            if (rows > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
         public static bool register(string strsql)
         {
             int rows = DBhelp.ExecuteNonQuery(strsql);
