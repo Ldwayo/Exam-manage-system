@@ -1,6 +1,6 @@
 ﻿namespace team_work
 {
-    partial class Form_User_Information_Management
+    partial class Form_User_InfoManage
     {
         /// <summary>
         /// Required designer variable.
@@ -57,111 +57,125 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.reader_id);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(2, 12);
+            this.groupBox1.Location = new System.Drawing.Point(3, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(742, 121);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(990, 162);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "用户信息管理";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(531, 52);
+            this.button1.Location = new System.Drawing.Point(708, 65);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 28);
+            this.button1.Size = new System.Drawing.Size(100, 35);
             this.button1.TabIndex = 8;
             this.button1.Text = "查询";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // card_state
             // 
-            this.card_state.Location = new System.Drawing.Point(363, 75);
+            this.card_state.Location = new System.Drawing.Point(484, 94);
+            this.card_state.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.card_state.Name = "card_state";
-            this.card_state.Size = new System.Drawing.Size(100, 21);
+            this.card_state.Size = new System.Drawing.Size(132, 25);
             this.card_state.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(264, 79);
+            this.label4.Location = new System.Drawing.Point(352, 99);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 12);
+            this.label4.Size = new System.Drawing.Size(82, 15);
             this.label4.TabIndex = 6;
             this.label4.Text = "在借状态：";
             // 
             // passwd
             // 
-            this.passwd.Location = new System.Drawing.Point(125, 76);
+            this.passwd.Location = new System.Drawing.Point(167, 95);
+            this.passwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passwd.Name = "passwd";
-            this.passwd.Size = new System.Drawing.Size(100, 21);
+            this.passwd.Size = new System.Drawing.Size(132, 25);
             this.passwd.TabIndex = 5;
             this.passwd.TextChanged += new System.EventHandler(this.password_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(36, 78);
+            this.label3.Location = new System.Drawing.Point(48, 98);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 12);
+            this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "密码：";
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(363, 31);
+            this.name.Location = new System.Drawing.Point(484, 39);
+            this.name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(100, 21);
+            this.name.Size = new System.Drawing.Size(132, 25);
             this.name.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(278, 34);
+            this.label2.Location = new System.Drawing.Point(371, 42);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.Size = new System.Drawing.Size(52, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "姓名：";
             // 
             // reader_id
             // 
-            this.reader_id.Location = new System.Drawing.Point(125, 31);
+            this.reader_id.Location = new System.Drawing.Point(167, 39);
+            this.reader_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.reader_id.Name = "reader_id";
-            this.reader_id.Size = new System.Drawing.Size(100, 21);
+            this.reader_id.Size = new System.Drawing.Size(132, 25);
             this.reader_id.TabIndex = 1;
             this.reader_id.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 36);
+            this.label1.Location = new System.Drawing.Point(48, 45);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(67, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "读者号：";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 156);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 195);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(742, 336);
+            this.dataGridView1.Size = new System.Drawing.Size(990, 422);
             this.dataGridView1.TabIndex = 1;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(443, 509);
+            this.button2.Location = new System.Drawing.Point(585, 635);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 24);
+            this.button2.Size = new System.Drawing.Size(123, 30);
             this.button2.TabIndex = 2;
             this.button2.Text = "修改用户信息";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(558, 509);
+            this.button3.Location = new System.Drawing.Point(738, 635);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 24);
+            this.button3.Size = new System.Drawing.Size(100, 30);
             this.button3.TabIndex = 3;
             this.button3.Text = "删除用户";
             this.button3.UseVisualStyleBackColor = true;
@@ -169,9 +183,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(659, 509);
+            this.button4.Location = new System.Drawing.Point(873, 635);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(58, 24);
+            this.button4.Size = new System.Drawing.Size(77, 30);
             this.button4.TabIndex = 4;
             this.button4.Text = "返回";
             this.button4.UseVisualStyleBackColor = true;
@@ -179,16 +194,18 @@
             // 
             // Form_User_Information_Management
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 569);
+            this.ClientSize = new System.Drawing.Size(1014, 694);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form_User_Information_Management";
             this.Text = "Form_User_Information_Management";
+            this.Load += new System.EventHandler(this.Form_User_Information_Management_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

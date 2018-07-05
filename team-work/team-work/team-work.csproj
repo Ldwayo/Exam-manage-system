@@ -51,17 +51,17 @@
     <Compile Include="Changepassword.Designer.cs">
       <DependentUpon>Changepassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Administrator_Information_Management.cs">
+    <Compile Include="Form_Admin_infoManage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Administrator_Information_Management.Designer.cs">
-      <DependentUpon>Form_Administrator_Information_Management.cs</DependentUpon>
+    <Compile Include="Form_Admin_infoManage.Designer.cs">
+      <DependentUpon>Form_Admin_infoManage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_User_Information_Management.cs">
+    <Compile Include="Form_User_InfoManage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_User_Information_Management.Designer.cs">
-      <DependentUpon>Form_User_Information_Management.cs</DependentUpon>
+    <Compile Include="Form_User_InfoManage.Designer.cs">
+      <DependentUpon>Form_User_InfoManage.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Addbook.cs">
       <SubType>Form</SubType>
@@ -110,11 +110,11 @@
     <EmbeddedResource Include="Changepassword.resx">
       <DependentUpon>Changepassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Administrator_Information_Management.resx">
-      <DependentUpon>Form_Administrator_Information_Management.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Admin_infoManage.resx">
+      <DependentUpon>Form_Admin_infoManage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_User_Information_Management.resx">
-      <DependentUpon>Form_User_Information_Management.cs</DependentUpon>
+    <EmbeddedResource Include="Form_User_InfoManage.resx">
+      <DependentUpon>Form_User_InfoManage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Addbook.resx">
       <DependentUpon>Form_Addbook.cs</DependentUpon>

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace team_work
 {
-    public partial class Form_Administrator_Information_Management : Form
+    public partial class Form_Admin_infoManage : Form
     {
-        public Form_Administrator_Information_Management()
+        public Form_Admin_infoManage()
         {
             InitializeComponent();
+        }
+
+        private void init_grid()
+        {
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -23,6 +28,11 @@ namespace team_work
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_Admin_infoManage_Load(object sender, EventArgs e)
         {
 
         }
