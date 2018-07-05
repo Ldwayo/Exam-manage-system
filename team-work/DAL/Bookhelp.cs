@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace DAL
 {
@@ -26,9 +27,24 @@ namespace DAL
             }
         }
 
-        public static bool SearchBook(string searchinfo)
+        //查询书籍信息
+        public static DataTable QueryBook(string book_id, string author, string name, string press)
         {
-
+            StringBuilder queryBuilder = new StringBuilder();
+            queryBuilder.Append("select * from book_info where ");
+            queryBuilder.Append("book_id LIKE  '%");
+            queryBuilder.Append(book_id);
+            queryBuilder.Append("%' and author LIKE '%");
+            queryBuilder.Append(author);
+            queryBuilder.Append("%' and name LIKE '%");
+            queryBuilder.Append(name);
+            /*queryBuilder.Append("' and name =  '");
+            queryBuilder.Append(name);*/
+            queryBuilder.Append("%' and publish LIKE '%");
+            queryBuilder.Append(press+"%'");
+            
+            DataTable data =  DBhelp.GetDataTable(queryBuilder.ToString());
+            return data;
         }
     }
 }
