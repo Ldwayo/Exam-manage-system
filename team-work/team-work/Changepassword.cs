@@ -67,6 +67,7 @@ namespace team_work
                         if (Userhelp.ChangePassword(Userhelp.ruid, p1))
                         {
                             MessageBox.Show("更改密码成功！");
+                            this.Close();
                         }
                         else
                         {
@@ -78,6 +79,7 @@ namespace team_work
                         if (Userhelp.adminChangePassword(Userhelp.ruid, p1))
                         {
                             MessageBox.Show("更改密码成功！");
+                            this.Close();
                         }
                         else
                         {

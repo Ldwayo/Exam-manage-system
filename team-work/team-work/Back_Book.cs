@@ -15,6 +15,8 @@ namespace team_work
     {
         public string sernum;
         public int count;
+        public string bookid;
+        public int bookcount;
         public Back_Book()
         {
             InitializeComponent();
@@ -31,6 +33,7 @@ namespace team_work
             stringBuilder.Append(strsql);
             stringBuilder.Append(" where reader_id='");
             stringBuilder.Append(Userhelp.ruid + "'");
+            stringBuilder.Append(" and state != 0");
             DataTable dataTable = DBhelp.GetDataTable(stringBuilder.ToString());
             dataGridView1.DataSource = dataTable;
         }
@@ -50,7 +53,12 @@ namespace team_work
             if (Userhelp.Back_book(sernum))
             {
                 Userhelp.update_ustate();
+                bookcount = Bookhelp.BookNum(bookid);
+                bookcount++;
+                Bookhelp.UpdateBook_lend(bookid,bookcount.ToString());
                 MessageBox.Show("还书成功！");
+                init_grid();
+                lend_num.Text = Userhelp.Lend_num().ToString();
             }
             else
             {
@@ -61,6 +69,12 @@ namespace team_work
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             sernum = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            bookid = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

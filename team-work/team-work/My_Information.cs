@@ -34,7 +34,7 @@ namespace team_work
                 reader_id.Text = Userhelp.ruid;
                 address.Text = (string)sqlDataReader["address"];
                 tel.Text = (string)sqlDataReader["tel"];
-                password.Text = (string)sqlDataReader["password"];
+                //password.Text = (string)sqlDataReader["password"];
             }
             sqlDataReader.Close();
         }
@@ -104,7 +104,7 @@ namespace team_work
             sex_man.Enabled = true;
             sex_woman.Enabled = true;
             address.ReadOnly = false;
-            password.ReadOnly = false;
+            //password.ReadOnly = false;
             button1.Enabled = true;
             button2.Enabled = false;
         }
@@ -119,7 +119,7 @@ namespace team_work
             sex_man.Enabled = false;
             sex_woman.Enabled = false;
             address.ReadOnly = true;
-            password.ReadOnly = true;
+            //password.ReadOnly = true;
             button1.Enabled = false;
             button2.Enabled = true;
 
@@ -141,8 +141,8 @@ namespace team_work
             stringBuilder.Append(address.Text);
             stringBuilder.Append("' , tel='");
             stringBuilder.Append(tel.Text);
-            stringBuilder.Append("' , password='");
-            stringBuilder.Append(password.Text+"'");
+            stringBuilder.Append("'");
+            //stringBuilder.Append(password.Text+"'");
             if (Userhelp.Changeinfo(admin_id.Text,stringBuilder.ToString()))
             {
                 MessageBox.Show("修改成功！");

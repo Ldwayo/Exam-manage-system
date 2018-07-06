@@ -100,7 +100,7 @@ namespace DAL
             int count = Lend_num();
             count++;
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append("update lend_list set ");
+            stringBuilder.Append("update reader_info set ");
             stringBuilder.Append("borrowable='");
             stringBuilder.Append(count + "'");
             stringBuilder.Append(" where reader_id='");
@@ -160,6 +160,7 @@ namespace DAL
             {
                 state = sqlDataReader["state"].ToString();
             }
+            sqlDataReader.Close();
             return state;
         }
 
@@ -277,11 +278,28 @@ namespace DAL
             }
         }
 
-        public static DataTable SelectAdmin()
+        public static DataTable ReaderInfoManage(string reader_id)
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append("select * from reader_info");
+            stringBuilder.Append("select * from reader_info where reader_id LIKE '%");
+            stringBuilder.Append(reader_id + "%'");
             return DBhelp.GetDataTable(stringBuilder.ToString());
+        }
+
+        public static bool deleteReader(string reader_id)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("delete from reader_info where reader_id = '");
+            stringBuilder.Append(reader_id +"'");
+            int row = DBhelp.ExecuteNonQuery(stringBuilder.ToString());
+            if (row > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

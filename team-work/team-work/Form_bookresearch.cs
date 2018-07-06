@@ -50,7 +50,8 @@ namespace team_work
             try
             {
                 Bookhelp.DeleteBook(textBox5.Text.ToString());
-                MessageBox.Show("删除成功,请重新查询以更新显示表单");
+                MessageBox.Show("删除成功");
+                init_gridview();
                 ClearTextBox();
             }
             catch (Exception ex)
@@ -166,7 +167,8 @@ namespace team_work
                 Bookhelp.UpdateBook(textBox5.Text.ToString(),textBox4.Text.ToString(), textBox3.Text.ToString(), 
                 textBox2.Text.ToString(),introduction.Text.ToString(),
                 price.Text.ToString(),pubdate.Value.ToString(),class_id.Text.ToString(),state,book_count.Text.ToString());
-                MessageBox.Show("更新成功,请重新查询以更新显示表单");
+                MessageBox.Show("更新成功");
+                init_gridview();
                 ClearTextBox();
             }
             catch (Exception ex)

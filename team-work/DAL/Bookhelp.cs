@@ -48,6 +48,7 @@ namespace DAL
             return data;
         }
 
+        //判断书的可借数量
         public static bool Have_book(string bookid)
         {
             DataTable data = QueryBook(bookid, "", "", "");
@@ -63,6 +64,16 @@ namespace DAL
             {
                 return false;
             }
+        }
+
+        public static int BookNum(string bookid)
+        {
+            DataTable data = QueryBook(bookid, "", "", "");
+            string count = "";
+            object j = data.Columns;
+            count = data.Rows[0]["book_count"].ToString();
+            int c = int.Parse(count);
+            return c;
         }
 
         public static bool LendBook(string bookid)

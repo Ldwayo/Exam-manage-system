@@ -75,12 +75,12 @@ namespace team_work
             form.Show();
         }
 
-        private void 管理员信息管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        /*private void 管理员信息管理ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form form = new Form_Admin_infoManage();
             form.MdiParent = this;
             form.Show();
-        }
+        }*/
 
         private void 系统设置ToolStripMenuItem_Click(object sender, EventArgs e)
         {

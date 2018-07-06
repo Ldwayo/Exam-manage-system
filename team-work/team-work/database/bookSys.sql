@@ -176,6 +176,9 @@ ALTER Table reader_info
 ALTER Table book_info
 	ADD book_count int Not Null DEFAULT 2;
 
+ALTER TABLE reader_info
+	ADD borrowable int not null Default 3;
+
 --state = 1 means this book has been borrow 
 ALTER TABLE lend_list
     ADD state int not null DEFAULT 1;
