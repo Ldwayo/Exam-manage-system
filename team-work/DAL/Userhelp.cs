@@ -18,7 +18,7 @@ namespace DAL
             ruid = Uid;
         }
 
-        public static bool Lend_num()
+        public static int Lend_num()
         {
             int count;
             string c = "";
@@ -31,11 +31,11 @@ namespace DAL
             count = int.Parse(c);
             if(count != 0)
             {
-                return true;
+                return count;
             }
             else
             {
-                return false;
+                return -1;
             }
         }
 

@@ -99,7 +99,7 @@ namespace team_work
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (Userhelp.Lend_num())
+            if (Userhelp.Lend_num() > 0)
             {
                 if (Bookhelp.Have_book(click_book))
                 {

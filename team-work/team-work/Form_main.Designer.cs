@@ -164,13 +164,13 @@
             // 使用帮助ToolStripMenuItem
             // 
             this.使用帮助ToolStripMenuItem.Name = "使用帮助ToolStripMenuItem";
-            this.使用帮助ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.使用帮助ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.使用帮助ToolStripMenuItem.Text = "使用帮助";
             // 
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.关于ToolStripMenuItem.Text = "关于";
             // 
             // 图书借阅ToolStripMenuItem
@@ -194,6 +194,7 @@
             this.还书ToolStripMenuItem.Name = "还书ToolStripMenuItem";
             this.还书ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.还书ToolStripMenuItem.Text = "还书";
+            this.还书ToolStripMenuItem.Click += new System.EventHandler(this.还书ToolStripMenuItem_Click_1);
             // 
             // Form_main
             // 

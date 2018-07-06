@@ -145,5 +145,12 @@ namespace team_work
             form.MdiParent = this;
             form.Show();
         }
+
+        private void 还书ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form form = new Back_Book();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
