@@ -23,12 +23,10 @@ DEALLOCATE   tb
   
 EXEC ('drop   database  [' + @dbname + ']')  
 
+CREATE DataBase BooksManage
 
 USE BooksManage 
 GO
-
-CREATE DataBase BooksManage
-
 CREATE TABLE reader_info
 (
     reader_id int NOT NULL PRIMARY KEY,
@@ -131,7 +129,7 @@ VALUES
 
 CREATE TABLE lend_list
 (
-    sernum bigint Not NULL PRIMARY Key,
+    sernum bigint identity(2018070100,1) Not NULL PRIMARY Key,
     book_id bigint Not NULL,
     reader_id int Not NULL,
     lend_date date DEFAULT NULL,
@@ -139,15 +137,15 @@ CREATE TABLE lend_list
 )
 
 INSERT INTO lend_list
-    (sernum, book_id, reader_id, lend_date, back_date)
+    (book_id, reader_id, lend_date, back_date)
 VALUES
-    (2015040139, 10000001, 1501014101, '2017-03-15', '2017-06-16'),
-    (2015040140, 10000003, 1501014101, '2017-06-10', '2017-09-02'),
-    (2015040141, 10000006, 1501014101, '2017-06-12', '2017-09-02'),
-    (2015040142, 50000004, 1501014101, '2017-03-15', '2017-09-03'),
-    (2015040143, 50000005, 1501014103, '2017-06-15', NULL),
-    (2015040144, 50000010, 1501014104, '2017-06-15', NULL),
-    (2015040145, 10000001, 1501014101, '2017-09-02', '2017-09-02');
+    (10000001, 1501014101, '2017-03-15', '2017-06-16'),
+    (10000003, 1501014101, '2017-06-10', '2017-09-02'),
+    (10000006, 1501014101, '2017-06-12', '2017-09-02'),
+    (50000004, 1501014101, '2017-03-15', '2017-09-03'),
+    (50000005, 1501014103, '2017-06-15', NULL),
+    (50000010, 1501014104, '2017-06-15', NULL),
+    (10000001, 1501014101, '2017-09-02', '2017-09-02');
 
 CREATE TABLE reader_card
 (
@@ -177,3 +175,7 @@ ALTER Table reader_info
 
 ALTER Table book_info
 	ADD book_count int Not Null DEFAULT 2;
+
+--state = 1 means this book has been borrow 
+ALTER TABLE lend_list
+    ADD state int not null DEFAULT 1;
