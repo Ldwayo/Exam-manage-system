@@ -85,9 +85,7 @@ namespace team_work
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form form = new Form_Login();
-            form.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
