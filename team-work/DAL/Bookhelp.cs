@@ -175,5 +175,24 @@ namespace DAL
                 return false;
             }
         }
+
+        public static DataTable BookTop()
+        {
+            StringBuilder bookTop = new StringBuilder();
+            bookTop.Append("SELECT top(5) book_info.name as '书名',count(book_info.name) as '被借最多的书'" +
+                " FROM book_info LEFT JOIN lend_list ON book_info.book_id = lend_list.book_id " +
+                "group by book_info.name " +
+                "order by 被借最多的书 desc");
+            DataTable data = DBhelp.GetDataTable(bookTop.ToString());
+            return data;
+        }
+
+        public static DataTable Statistic()
+        {
+            StringBuilder statistic = new StringBuilder();
+            statistic.Append("select * from lend_list");
+            DataTable data = DBhelp.GetDataTable(statistic.ToString());
+            return data;
+        }
     }
 }

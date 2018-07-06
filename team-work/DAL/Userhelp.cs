@@ -301,5 +301,16 @@ namespace DAL
                 return false;
             }
         }
+
+        public static DataTable UserTop()
+        {
+            StringBuilder userTop = new StringBuilder();
+            userTop.Append("SELECT top(5) reader_info.name as '用户名',count(reader_info.name) as '借书最多的用户' " +
+                "FROM reader_info LEFT JOIN lend_list ON reader_info.reader_id = lend_list.reader_id " +
+                "group by reader_info.name " +
+                "order by 借书最多的用户 desc");
+            DataTable data = DBhelp.GetDataTable(userTop.ToString());
+            return data;
+        }
     }
 }

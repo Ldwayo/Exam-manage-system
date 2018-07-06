@@ -152,5 +152,12 @@ namespace team_work
             form.MdiParent = this;
             form.Show();
         }
+
+        private void 信息统计ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form form = new Form_statistic();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
