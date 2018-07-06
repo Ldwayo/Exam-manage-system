@@ -13,13 +13,15 @@ namespace team_work
 {
     public partial class Back_Book : Form
     {
+        public string sernum;
         public int count;
         public Back_Book()
         {
             InitializeComponent();
             init_grid();
             count = Userhelp.Lend_num();
-
+            name.Text = Userhelp.ruid;
+            lend_num.Text = count.ToString();
         }
 
         public void init_grid()
@@ -45,7 +47,20 @@ namespace team_work
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (Userhelp.Back_book(sernum))
+            {
+                Userhelp.update_ustate();
+                MessageBox.Show("还书成功！");
+            }
+            else
+            {
+                MessageBox.Show("本书已归还！请勿重复操作！");
+            }
+        }
 
+        private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            sernum = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
         }
     }
 }

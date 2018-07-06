@@ -35,7 +35,7 @@ namespace DAL
             }
             else
             {
-                return -1;
+                return 0;
             }
         }
 
@@ -71,6 +71,96 @@ namespace DAL
                     return false;
                 }
             }
+        }
+
+        public static bool Record_Lend(string bookid)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("insert into lend_list(book_id, reader_id, " +
+                "lend_date, back_date) values(");
+            stringBuilder.Append("'" + bookid + "' ,");
+            stringBuilder.Append("'" + ruid + "' ,");
+            stringBuilder.Append("'" + DateTime.Now.ToShortDateString() + "' ,");
+            stringBuilder.Append("'" + DateTime.Now.AddMonths(3).ToShortDateString() + "'");
+            stringBuilder.Append(")");
+            int rows = DBhelp.ExecuteNonQuery(stringBuilder.ToString());
+
+            if (rows > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool update_ustate()
+        {
+            int count = Lend_num();
+            count++;
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("update lend_list set ");
+            stringBuilder.Append("borrowable='");
+            stringBuilder.Append(count + "'");
+            stringBuilder.Append(" where reader_id='");
+            stringBuilder.Append(ruid + "'");
+            int rows = DBhelp.ExecuteNonQuery(stringBuilder.ToString());
+
+            if (rows > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool Back_book(string sernum)
+        {
+            string str = return_state(sernum);
+            int state = int.Parse(str);
+            if(state == 0)
+            {
+                return false;
+            }
+            else
+            {
+                state--;
+                StringBuilder stringBuilder = new StringBuilder();
+                stringBuilder.Append("update lend_list set ");
+                stringBuilder.Append("state='");
+                stringBuilder.Append(state + "'");
+                stringBuilder.Append(" where sernum='");
+                stringBuilder.Append(sernum + "'");
+                int rows = DBhelp.ExecuteNonQuery(stringBuilder.ToString());
+
+                if (rows > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
+        public static string return_state(string sernum)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("select state from lend_list");
+            stringBuilder.Append(" where ");
+            stringBuilder.Append("sernum=");
+            stringBuilder.Append(sernum);
+            SqlDataReader sqlDataReader = DBhelp.ExecuteReader(stringBuilder.ToString());
+            string state = "";
+            while (sqlDataReader.Read())
+            {
+                state = sqlDataReader["state"].ToString();
+            }
+            return state;
         }
 
         //search id exists

@@ -106,6 +106,7 @@ namespace team_work
                     if (Bookhelp.LendBook(click_book) && Userhelp.User_lend())
                     {
                         MessageBox.Show("借书成功！");
+                        Userhelp.Record_Lend(click_book);
                     }
                     else
                     {

@@ -37,14 +37,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lend_num = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.lend_num);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.name);
             this.groupBox1.Controls.Add(this.label1);
@@ -86,6 +86,7 @@
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(781, 275);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
             // button1
             // 
@@ -118,14 +119,14 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "可借次数：";
             // 
-            // label3
+            // lend_num
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(413, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(15, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "0";
+            this.lend_num.AutoSize = true;
+            this.lend_num.Location = new System.Drawing.Point(413, 68);
+            this.lend_num.Name = "lend_num";
+            this.lend_num.Size = new System.Drawing.Size(15, 15);
+            this.lend_num.TabIndex = 2;
+            this.lend_num.Text = "0";
             // 
             // Back_Book
             // 
@@ -157,7 +158,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lend_num;
         private System.Windows.Forms.Label label2;
     }
 }
