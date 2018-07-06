@@ -13,7 +13,7 @@ namespace team_work
 {
     public partial class Back_Book : Form
     {
-        public string sernum;
+        public string sernum = "";
         public int count;
         public string bookid;
         public int bookcount;
@@ -50,19 +50,26 @@ namespace team_work
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Userhelp.Back_book(sernum))
+            if (!sernum.Equals(""))
             {
-                Userhelp.update_ustate();
-                bookcount = Bookhelp.BookNum(bookid);
-                bookcount++;
-                Bookhelp.UpdateBook_lend(bookid,bookcount.ToString());
-                MessageBox.Show("还书成功！");
-                init_grid();
-                lend_num.Text = Userhelp.Lend_num().ToString();
+                if (Userhelp.Back_book(sernum))
+                {
+                    Userhelp.update_ustate();
+                    bookcount = Bookhelp.BookNum(bookid);
+                    bookcount++;
+                    Bookhelp.UpdateBook_lend(bookid, bookcount.ToString());
+                    MessageBox.Show("还书成功！");
+                    init_grid();
+                    lend_num.Text = Userhelp.Lend_num().ToString();
+                }
+                else
+                {
+                    MessageBox.Show("本书已归还！请勿重复操作！");
+                }
             }
             else
             {
-                MessageBox.Show("本书已归还！请勿重复操作！");
+                MessageBox.Show("没有选择的书目！");
             }
         }
 
